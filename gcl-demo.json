@@ -1,0 +1,294 @@
+{
+  "version": "1.0",
+  "description": "Demo Configuration - All Available Options",
+  "customFields": [
+    {
+      "name": "Aircraft",
+      "value": "Demo Aircraft"
+    },
+    {
+      "name": "Pilot",
+      "value": "Demo Pilot"
+    },
+    {
+      "name": "Date",
+      "value": "2025-04-20"
+    },
+    {
+      "name": "Location",
+      "value": "Demo Airport"
+    },
+    {
+      "name": "Notes",
+      "value": "This is a demo file"
+    }
+  ],
+  "groups": [
+    {
+      "name": "NORMAL PROCEDURES",
+      "checklists": [
+        {
+          "name": "ENTRY TYPES DEMO",
+          "entries": [
+            {
+              "text": "Challenge Entry (checkbox)",
+              "type": "Challenge",
+              "response": "RESPONSE TEXT"
+            },
+            {
+              "text": "Warning Entry (scrollStop)",
+              "type": "Warning"
+            },
+            {
+              "text": "Caution Entry (scrollStop)",
+              "type": "Caution"
+            },
+            {
+              "text": "Note Entry (scrollStop)",
+              "type": "Note"
+            },
+            {
+              "text": "Subtitle Entry (noScrollStop)",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Section Entry (noScrollStop)",
+              "type": "Section"
+            }
+          ],
+          "linkedAlerts": []
+        },
+        {
+          "name": "JUSTIFICATION OPTIONS DEMO",
+          "entries": [
+            {
+              "text": "Default justification (no justification specified)",
+              "type": "Challenge",
+              "response": "DEFAULT"
+            },
+            {
+              "text": "Center justification",
+              "type": "Section",
+              "justification": "center"
+            },
+            {
+              "text": "Indent level 1",
+              "type": "Challenge",
+              "response": "LEVEL 1",
+              "justification": "indent1"
+            },
+            {
+              "text": "Indent level 2",
+              "type": "Challenge",
+              "response": "LEVEL 2",
+              "justification": "indent2"
+            },
+            {
+              "text": "Indent level 3",
+              "type": "Challenge",
+              "response": "LEVEL 3",
+              "justification": "indent3"
+            },
+            {
+              "text": "Indent level 4",
+              "type": "Challenge",
+              "response": "LEVEL 4",
+              "justification": "indent4"
+            }
+          ],
+          "linkedAlerts": []
+        },
+        {
+          "name": "SPACING OPTIONS DEMO",
+          "entries": [
+            {
+              "text": "No blank lines below",
+              "type": "Challenge",
+              "response": "NORMAL"
+            },
+            {
+              "text": "One blank line below",
+              "type": "Challenge",
+              "response": "ONE BLANK",
+              "blanksBelow": 1
+            },
+            {
+              "text": "Two blank lines below",
+              "type": "Challenge",
+              "response": "TWO BLANKS",
+              "blanksBelow": 2
+            },
+            {
+              "text": "Final entry",
+              "type": "Challenge",
+              "response": "END"
+            }
+          ],
+          "linkedAlerts": []
+        },
+        {
+          "name": "HIERARCHICAL STRUCTURE DEMO",
+          "entries": [
+            {
+              "text": "Main item",
+              "type": "Challenge",
+              "response": "CHECK"
+            },
+            {
+              "text": "> If primary condition is met:",
+              "type": "Subtitle",
+              "justification": "indent1"
+            },
+            {
+              "text": "First level action",
+              "type": "Challenge",
+              "response": "EXECUTE",
+              "justification": "indent2"
+            },
+            {
+              "text": ">> If secondary condition is met:",
+              "type": "Subtitle",
+              "justification": "indent2"
+            },
+            {
+              "text": "Second level action",
+              "type": "Challenge",
+              "response": "EXECUTE",
+              "justification": "indent3"
+            },
+            {
+              "text": "?? If special condition exists:",
+              "type": "Subtitle",
+              "justification": "indent3"
+            },
+            {
+              "text": "Special action required",
+              "type": "Warning",
+              "justification": "indent4"
+            },
+            {
+              "text": "# If numeric condition reached:",
+              "type": "Subtitle",
+              "justification": "indent2"
+            },
+            {
+              "text": "Numeric-based action",
+              "type": "Challenge",
+              "response": "EXECUTE",
+              "justification": "indent3"
+            },
+            {
+              "text": ">> Otherwise:",
+              "type": "Subtitle",
+              "justification": "indent1"
+            },
+            {
+              "text": "Alternative action",
+              "type": "Challenge",
+              "response": "EXECUTE",
+              "justification": "indent2"
+            }
+          ],
+          "linkedAlerts": []
+        }
+      ],
+      "enableGoToNextChecklist": true
+    },
+    {
+      "name": "EMERGENCY PROCEDURES",
+      "checklists": [
+        {
+          "name": "SAMPLE EMERGENCY PROCEDURE",
+          "entries": [
+            {
+              "text": "Emergency detected",
+              "type": "Subtitle",
+              "blanksBelow": 1
+            },
+            {
+              "text": "Initial action 1",
+              "type": "Challenge",
+              "response": "EXECUTE IMMEDIATELY"
+            },
+            {
+              "text": "Initial action 2",
+              "type": "Challenge",
+              "response": "EXECUTE IMMEDIATELY"
+            },
+            {
+              "text": "WARNING: Critical safety information",
+              "type": "Warning"
+            },
+            {
+              "text": "If conditions worsen:",
+              "type": "Section",
+              "justification": "center"
+            },
+            {
+              "text": "Follow-up action 1",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "Follow-up action 2",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "CAUTION: Important consideration",
+              "type": "Caution",
+              "justification": "center"
+            }
+          ],
+          "linkedAlerts": []
+        }
+      ],
+      "enableGoToNextChecklist": false
+    }
+  ],
+  "branchChecklists": [],
+  "entryTypes": [
+    {
+      "name": "Challenge",
+      "color": "white",
+      "fontSize": 15,
+      "interaction": "checkbox"
+    },
+    {
+      "name": "Warning",
+      "color": "yellow",
+      "fontSize": 15,
+      "interaction": "scrollStop"
+    },
+    {
+      "name": "Caution",
+      "color": "white",
+      "fontSize": 15,
+      "interaction": "scrollStop"
+    },
+    {
+      "name": "Note",
+      "color": "silver",
+      "fontSize": 15,
+      "interaction": "scrollStop"
+    },
+    {
+      "name": "Subtitle",
+      "color": "white",
+      "fontSize": 18,
+      "interaction": "noScrollStop"
+    },
+    {
+      "name": "Section",
+      "color": "green",
+      "fontSize": 15,
+      "interaction": "noScrollStop"
+    }
+  ],
+  "images": [],
+  "legacySpaceEncoding": false,
+  "defaultChecklist": {
+    "group": 0,
+    "checklist": 0
+  }
+}
