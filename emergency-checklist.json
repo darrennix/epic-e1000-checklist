@@ -1,0 +1,838 @@
+{
+  "version": "1.0",
+  "description": "Condensed E1000 GX Procedures Checklist",
+  "customFields": [
+    {
+      "name": "Aircraft",
+      "value": "Epic E1000 GX"
+    },
+    {
+      "name": "Revision Date",
+      "value": "2025-04-20"
+    },
+    {
+      "name": "Revision",
+      "value": "A"
+    }
+  ],
+  "groups": [
+    {
+      "name": "NORMAL PROCEDURES",
+      "checklists": [
+        {
+          "name": "BEFORE STARTING ENGINE",
+          "entries": [
+            {
+              "text": "Preflight Inspection",
+              "type": "Challenge",
+              "response": "COMPLETE"
+            },
+            {
+              "text": "Main Entry Door",
+              "type": "Challenge",
+              "response": "CLOSED & LATCHED"
+            },
+            {
+              "text": "Seats and Seatbelts",
+              "type": "Challenge",
+              "response": "SECURE"
+            },
+            {
+              "text": "Passenger Briefing",
+              "type": "Challenge",
+              "response": "COMPLETE"
+            },
+            {
+              "text": "Glare Shield",
+              "type": "Challenge",
+              "response": "STOWED"
+            },
+            {
+              "text": "MAN OVRD Lever",
+              "type": "Challenge",
+              "response": "STOWED"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "IDLE"
+            },
+            {
+              "text": "TO PREVENT DAMAGE TO ENGINE CONTROLS, DO NOT MOVE THE POWER LEVER AFT OF THE IDLE GATE WITH ENGINE NOT RUNNING.",
+              "type": "Caution",
+              "justification": "center"
+            },
+            {
+              "text": "PROP Lever",
+              "type": "Challenge",
+              "response": "FEATHER"
+            },
+            {
+              "text": "COND Lever",
+              "type": "Challenge",
+              "response": "FUEL CUTOFF"
+            },
+            {
+              "text": "Climate Controls",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "LIGHTS and ICE Switches",
+              "type": "Challenge",
+              "response": "MIN. REQUIRED"
+            },
+            {
+              "text": "BATT 1 & BATT 2 Switches",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "BATT 1 & BATT 2 Voltages",
+              "type": "Challenge",
+              "response": "24.2 V MINIMUM"
+            },
+            {
+              "text": "Fuel-On-Board Totalizer",
+              "type": "Challenge",
+              "response": "FOB SYNC"
+            },
+            {
+              "text": "Flight Controls",
+              "type": "Challenge",
+              "response": "FREE & CORRECT"
+            },
+            {
+              "text": "Autopilot",
+              "type": "Challenge",
+              "response": "TEST"
+            },
+            {
+              "text": "Stall Prevention System",
+              "type": "Challenge",
+              "response": "TEST"
+            },
+            {
+              "text": "Landing Field Elevation",
+              "type": "Challenge",
+              "response": "VERIFY/SET"
+            },
+            {
+              "text": "Avionics/Navigation",
+              "type": "Challenge",
+              "response": "SET"
+            },
+            {
+              "text": "Weather & NOTAMS",
+              "type": "Challenge",
+              "response": "CHECK"
+            },
+            {
+              "text": "Altimeters",
+              "type": "Challenge",
+              "response": "SET"
+            },
+            {
+              "text": "Clearance Delivery",
+              "type": "Challenge",
+              "response": "CHECK"
+            },
+            {
+              "text": "Transponder",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            }
+          ],
+          "linkedAlerts": []
+        },
+        {
+          "name": "STARTING ENGINE",
+          "entries": [
+            {
+              "text": "Exterior Lights",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "Propeller Area",
+              "type": "Challenge",
+              "response": "CLEAR"
+            },
+            {
+              "text": "FUEL TANK SELECTOR Knob",
+              "type": "Challenge",
+              "response": "LEFT"
+            },
+            {
+              "text": "Pre-Start Switches",
+              "type": "Challenge",
+              "response": "ALL ON"
+            },
+            {
+              "text": "START Switch",
+              "type": "Challenge",
+              "response": "PRESS & RELEASE"
+            },
+            {
+              "text": "Oil Pressure",
+              "type": "Challenge",
+              "response": "VERIFY RISE",
+              "justification": "indent1"
+            },
+            {
+              "text": "NG",
+              "type": "Challenge",
+              "response": "12% MINIMUM",
+              "justification": "indent1"
+            },
+            {
+              "text": "NG",
+              "type": "Challenge",
+              "response": "VERIFY STABLE ABOVE 51%"
+            },
+            {
+              "text": "If oil pressure does not rise or NG does not reach minimum speed:",
+              "type": "Note"
+            },
+            {
+              "text": "DISCONTINUE ENGINE START",
+              "type": "Note",
+              "justification": "indent1"
+            },
+            {
+              "text": "If NG stabilizes below 51% or ITT at idle approaches 750°C:",
+              "type": "Note"
+            },
+            {
+              "text": "COND Lever...HIGH",
+              "type": "Note",
+              "justification": "indent1"
+            }
+          ],
+          "linkedAlerts": []
+        },
+        {
+          "name": "AFTER START/BEFORE TAXI",
+          "entries": [
+            {
+              "text": "IGNITER Switch",
+              "type": "Challenge",
+              "response": "AUTO"
+            },
+            {
+              "text": "PRE-TAXI Switches",
+              "type": "Challenge",
+              "response": "ALL ON (except Pressurization)"
+            },
+            {
+              "text": "Crew Oxygen Masks",
+              "type": "Challenge",
+              "response": "PRESSURIZED"
+            },
+            {
+              "text": "Climate Controls",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "PROP Lever",
+              "type": "Challenge",
+              "response": "MAX RPM"
+            },
+            {
+              "text": "COND Lever",
+              "type": "Challenge",
+              "response": "HIGH"
+            },
+            {
+              "text": "ALTN AMP Indicator",
+              "type": "Challenge",
+              "response": "ZERO"
+            },
+            {
+              "text": "TAXI Light",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "Brakes",
+              "type": "Challenge",
+              "response": "CHECK"
+            },
+            {
+              "text": "Flight and Standby Instruments",
+              "type": "Challenge",
+              "response": "CHECK"
+            },
+            {
+              "text": "Taxi Instructions",
+              "type": "Challenge",
+              "response": "CHECK"
+            }
+
+          ],
+          "linkedAlerts": []
+        },
+        {
+          "name": "BEFORE TAKEOFF",
+          "entries": [
+            {
+              "text": "De-Ice Boot System",
+              "type": "Challenge",
+              "response": "TEST"
+            },
+            {
+              "text": "(1500 RPM, prior to flight into icing conditions)",
+              "type": "Note"
+            },
+            {
+              "text": "Propeller Overspeed Governor",
+              "type": "Challenge",
+              "response": "TEST"
+            },
+            {
+              "text": "(first flight of day)",
+              "type": "Note"
+            },
+            {
+              "text": "Inertial Separator",
+              "type": "Challenge",
+              "response": "TEST"
+            },
+            {
+              "text": "(prior to flight into icing conditions)",
+              "type": "Note"
+            },
+            {
+              "text": "Engine Instruments",
+              "type": "Challenge",
+              "response": "NORMAL"
+            },
+            {
+              "text": "Flight Controls",
+              "type": "Challenge",
+              "response": "FREE & CORRECT"
+            },
+            {
+              "text": "Trims",
+              "type": "Challenge",
+              "response": "SET FOR TAKEOFF"
+            },
+            {
+              "text": "Flaps",
+              "type": "Challenge",
+              "response": "T/O"
+            },
+            {
+              "text": "Fuel Quantity, Balance",
+              "type": "Challenge",
+              "response": "CHECK"
+            },
+            {
+              "text": "Avionics / Navigation",
+              "type": "Challenge",
+              "response": "SET"
+            },
+            {
+              "text": "PRE-TAXI Switches",
+              "type": "Challenge",
+              "response": "CHECK ON"
+            },
+            {
+              "text": "SYSTEMS Switches",
+              "type": "Challenge",
+              "response": "CHECK OFF"
+            },
+            {
+              "text": "PROP Lever",
+              "type": "Challenge",
+              "response": "MAX RPM"
+            },
+            {
+              "text": "Autopilot and Yaw Damper",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "TO/GA Takeoff Check",
+              "type": "Challenge",
+              "response": "COMPLETE"
+            },
+            {
+              "text": "Takeoff Briefing",
+              "type": "Challenge",
+              "response": "COMPLETE"
+            }
+          ],
+          "linkedAlerts": []
+        },
+        {
+          "name": "TAKING RUNWAY",
+          "entries": [
+            {
+              "text": "IGNITER Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "PITOT STALL HT Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "External Lights",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "CAS Messages",
+              "type": "Challenge",
+              "response": "NO RED OR AMBER MSGS"
+            }
+          ],
+          "linkedAlerts": []
+        },
+        {
+          "name": "TAKEOFF / CLIMB",
+          "entries": [
+            {
+              "text": "Rotate",
+              "type": "Challenge",
+              "response": "90 KIAS"
+            },
+            {
+              "text": "Brakes",
+              "type": "Challenge",
+              "response": "APPLY BRIEFLY"
+            },
+            {
+              "text": "Landing Gear",
+              "type": "Challenge",
+              "response": "UP"
+            },
+            {
+              "text": "Flaps",
+              "type": "Challenge",
+              "response": "UP"
+            },
+            {
+              "text": "Best Rate of Climb Speed",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "(VY 150 to FL240 then 140)",
+              "type": "Note"
+            },
+            {
+              "text": "Trim or Yaw Damper",
+              "type": "Challenge",
+              "response": "SET"
+            },
+            {
+              "text": "IGNITER Switch",
+              "type": "Challenge",
+              "response": "AUTO"
+            },
+            {
+              "text": "Engine Instruments",
+              "type": "Challenge",
+              "response": "MONITOR"
+            },
+            {
+              "text": "External lights",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "Pressurization",
+              "type": "Challenge",
+              "response": "CHECK"
+            }
+          ],
+          "linkedAlerts": []
+        },
+        {
+          "name": "CRUISE",
+          "entries": [
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "MAXIMUM CRUISE POWER OR LESS"
+            },
+            {
+              "text": "PROP Lever",
+              "type": "Challenge",
+              "response": "AS DESIRED"
+            },
+            {
+              "text": "Engine Instruments",
+              "type": "Challenge",
+              "response": "MONITOR"
+            },
+            {
+              "text": "Pressurization",
+              "type": "Challenge",
+              "response": "MONITOR"
+            },
+            {
+              "text": "Fuel Quantity, Balance",
+              "type": "Challenge",
+              "response": "MONITOR"
+            },
+            {
+              "text": "ICE Switches",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "Guard Frequency",
+              "type": "Challenge",
+              "response": "MONITOR"
+            }
+          ],
+          "linkedAlerts": []
+        },
+        {
+          "name": "ARRIVAL / DESCENT",
+          "entries": [
+            {
+              "text": "PROP Lever",
+              "type": "Challenge",
+              "response": "MAX RPM"
+            },
+            {
+              "text": "Landing Field Elevation",
+              "type": "Challenge",
+              "response": "CHECK"
+            },
+            {
+              "text": "Fuel Quantity, Balance",
+              "type": "Challenge",
+              "response": "MONITOR"
+            },
+            {
+              "text": "Arrival",
+              "type": "Challenge",
+              "response": "SELECTED"
+            },
+            {
+              "text": "Weather & NOTAMS",
+              "type": "Challenge",
+              "response": "CHECK"
+            }
+          ],
+          "linkedAlerts": []
+        },
+        {
+          "name": "APPROACH",
+          "entries": [
+            {
+              "text": "PROP Lever",
+              "type": "Challenge",
+              "response": "MAX RPM"
+            },
+            {
+              "text": "COND Lever",
+              "type": "Challenge",
+              "response": "HIGH"
+            },
+            {
+              "text": "IGNITER Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "Landing Lights",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "Altimeters",
+              "type": "Challenge",
+              "response": "SET"
+            },
+            {
+              "text": "Pusher Ice Mode Alert",
+              "type": "Challenge",
+              "response": "CHECK IF ACTIVE"
+            },
+            {
+              "text": "Approach and Landing Brief",
+              "type": "Challenge",
+              "response": "COMPLETE"
+            }
+          ],
+          "linkedAlerts": []
+        },
+        {
+          "name": "BEFORE LANDING",
+          "entries": [
+            {
+              "text": "Flaps",
+              "type": "Challenge",
+              "response": "SET"
+            },
+            {
+              "text": "Landing Gear",
+              "type": "Challenge",
+              "response": "DOWN"
+            },
+            {
+              "text": "Brakes",
+              "type": "Challenge",
+              "response": "TEST"
+            },
+            {
+              "text": "Yaw Damper",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "Rudder Trim",
+              "type": "Challenge",
+              "response": "CENTER"
+            },
+            {
+              "text": "Approach Speeds:",
+              "type": "Note"
+            },
+            {
+              "text": "Flaps UP: 115 KIAS (Normal Mode)",
+              "type": "Note",
+              "justification": "indent1"
+            },
+            {
+              "text": "Flaps T/O: 110 KIAS (Normal Mode), 122-133 KIAS (Pusher Ice Mode)",
+              "type": "Note",
+              "justification": "indent1"
+            },
+            {
+              "text": "Flaps FULL: 95 KIAS (Normal Mode)",
+              "type": "Note",
+              "justification": "indent1"
+            }
+          ],
+          "linkedAlerts": []
+        },
+        {
+          "name": "AFTER LANDING",
+          "entries": [
+            {
+              "text": "Lights",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "PITOT STALL HT Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "IGNITER Switch",
+              "type": "Challenge",
+              "response": "AUTO"
+            },
+            {
+              "text": "Flaps",
+              "type": "Challenge",
+              "response": "UP"
+            },
+            {
+              "text": "DE-ICE BOOTS Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "INERT SEP Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "Flight Plan",
+              "type": "Challenge",
+              "response": "CANCEL"
+            }          
+          ],
+          "linkedAlerts": []
+        },
+        {
+          "name": "SHUTDOWN",
+          "entries": [
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "IDLE"
+            },
+            {
+              "text": "COND Lever",
+              "type": "Challenge",
+              "response": "LOW"
+            },
+            {
+              "text": "PROP Lever",
+              "type": "Challenge",
+              "response": "FEATHER"
+            },
+            {
+              "text": "Lights",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "Climate Controls",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "PRE-TAXI Switches",
+              "type": "Challenge",
+              "response": "ALL OFF"
+            },
+            {
+              "text": "Engine Cooldown",
+              "type": "Challenge",
+              "response": "COMPLETE"
+            },
+            {
+              "text": "COND Lever",
+              "type": "Challenge",
+              "response": "FUEL CUTOFF"
+            },
+            {"text":"", "type":"Note"},
+            {"text":"After Ng is below 10%:", "type":"Subtitle"},
+            {
+              "text": "L & R FUEL PUMP Switchess",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "Fuel Selector",
+              "type": "Challenge",
+              "response": "LEFT"
+            },
+            {
+              "text": "Flight Plan",
+              "type": "Challenge",
+              "response": "CANCEL"
+            }     ,            
+
+            {
+              "text": "BATT 1 & BATT 2 Switches",
+              "type": "Challenge",
+              "response": "OFF"
+            }                 
+
+            
+        
+          ],
+          "linkedAlerts": []
+        }
+      ],
+      "enableGoToNextChecklist": true
+    },
+    {
+      "name": "EMERGENCY PROCEDURES",
+      "checklists": [
+        {
+          "name": "ENGINE FAILURE DURING TAKEOFF",
+          "entries": [
+            {
+              "text": "Before Rotation",
+              "type": "Subtitle",
+              "justification": "center"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "IDLE"
+            },
+            {
+              "text": "Brakes",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "After Rotation",
+              "type": "Subtitle",
+              "justification": "center"
+            },
+            {
+              "text": "Pitch Attitude",
+              "type": "Challenge",
+              "response": "7° NOSE UP"
+            },
+            {
+              "text": "Airspeed",
+              "type": "Challenge",
+              "response": "95 KIAS MINIMUM"
+            },
+            {
+              "text": "Landing Gear",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "Flaps",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            }
+          ],
+          "linkedAlerts": []
+        }
+      ],
+      "enableGoToNextChecklist": false
+    }
+  ],
+  "branchChecklists": [],
+  "entryTypes": [
+    {
+      "name": "Challenge",
+      "color": "white",
+      "fontSize": 15,
+      "interaction": "checkbox"
+    },
+    {
+      "name": "MemoryItem",
+      "color": "magenta",
+      "fontSize": 15,
+      "interaction": "checkbox"
+    },
+    {
+      "name": "Warning",
+      "color": "red",
+      "fontSize": 15,
+      "interaction": "scrollStop"
+    },
+    {
+      "name": "Caution",
+      "color": "yellow",
+      "fontSize": 15,
+      "interaction": "scrollStop"
+    },
+    {
+      "name": "Note",
+      "color": "silver",
+      "fontSize": 15,
+      "interaction": "noScrollStop"
+    },
+    {
+      "name": "Subtitle",
+      "color": "white",
+      "fontSize": 18,
+      "interaction": "noScrollStop"
+    },
+    {
+      "name": "Section",
+      "color": "green",
+      "fontSize": 15,
+      "interaction": "noScrollStop"
+    }
+  ],
+  "images": [],
+  "legacySpaceEncoding": false,
+  "defaultChecklist": {
+    "group": 0,
+    "checklist": 0
+  }
+}
