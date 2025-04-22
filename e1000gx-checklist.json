@@ -59,7 +59,7 @@
             },
             {
               "text": "TO PREVENT DAMAGE TO ENGINE CONTROLS, DO NOT MOVE THE POWER LEVER AFT OF THE IDLE GATE WITH ENGINE NOT RUNNING.",
-              "type": "Warning",
+              "type": "Caution",
               "justification": "center"
             },
             {
@@ -793,14 +793,20 @@
       "interaction": "checkbox"
     },
     {
+      "name": "MemoryItem",
+      "color": "magenta",
+      "fontSize": 15,
+      "interaction": "checkbox"
+    },
+    {
       "name": "Warning",
-      "color": "yellow",
+      "color": "red",
       "fontSize": 15,
       "interaction": "scrollStop"
     },
     {
       "name": "Caution",
-      "color": "white",
+      "color": "yellow",
       "fontSize": 15,
       "interaction": "scrollStop"
     },
@@ -808,7 +814,7 @@
       "name": "Note",
       "color": "silver",
       "fontSize": 15,
-      "interaction": "scrollStop"
+      "interaction": "noScrollStop"
     },
     {
       "name": "Subtitle",
