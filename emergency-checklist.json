@@ -198,45 +198,42 @@
           ]
         },
         {
-          "name": "EMERGENCY DESCENT",
+          "name": "MAXIMUM RATE EMERGENCY DESCENT",
           "entries": [
             {
-              "text": "MAXIMUM RATE EMERGENCY DESCENT",
-              "type": "Section"
-            },
-            {
               "text": "Autopilot",
-              "type": "Challenge",
+              "type": "MemoryItem",
               "response": "DISENGAGE"
             },
             {
               "text": "POWER Lever",
-              "type": "Challenge",
+              "type": "MemoryItem",
               "response": "IDLE"
             },
             {
               "text": "PROP Lever",
-              "type": "Challenge",
+              "type": "MemoryItem",
               "response": "MAX RPM"
             },
             {
               "text": "Pitch",
-              "type": "Challenge",
-              "response": "10° TO 20° NOSE DOWN"
+              "type": "MemoryItem",
+              "response": "10\u00b0 TO 20\u00b0 NOSE DOWN"
             },
             {
               "text": "Airspeed",
-              "type": "Challenge",
+              "type": "MemoryItem",
               "response": "MMO/VMO"
             },
             {
               "text": "IF SIGNIFICANT TURBULENCE IS EXPECTED, OR IF SUSPECTED STRUCTURAL PROBLEM, DO NOT DESCEND AT INDICATED AIRSPEEDS GREATER THAN VO.",
               "type": "Caution"
-            },
-            {
-              "text": "MAXIMUM RANGE EMERGENCY DESCENT",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "MAXIMUM RANGE EMERGENCY DESCENT",
+          "entries": [
             {
               "text": "POWER Lever",
               "type": "Challenge",
@@ -267,10 +264,6 @@
         {
           "name": "AIR START",
           "entries": [
-            {
-              "text": "AIR START",
-              "type": "Section"
-            },
             {
               "text": "Verify within Air Start Envelope.",
               "type": "Challenge"
@@ -353,12 +346,14 @@
             {
               "text": "Oil Pressure",
               "type": "Challenge",
-              "response": "RISING"
+              "response": "RISING",
+              "justification": "indent1"
             },
             {
               "text": "NG",
               "type": "Challenge",
-              "response": "12% MINIMUM"
+              "response": "12% MINIMUM",
+              "justification": "indent1"
             },
             {
               "text": "COND Lever",
@@ -486,46 +481,8 @@
           ]
         },
         {
-          "name": "FIRE, SMOKE, OR FUMES",
+          "name": "ENGINE FIRE IN FLIGHT",
           "entries": [
-            {
-              "text": "ENGINE OR COCKPIT/CABIN FIRE DURING START OR ON THE GROUND",
-              "type": "Section"
-            },
-            {
-              "text": "Airplane",
-              "type": "MemoryItem",
-              "response": "STOP"
-            },
-            {
-              "text": "COND Lever",
-              "type": "MemoryItem",
-              "response": "FUEL CUTOFF"
-            },
-            {
-              "text": "FUEL TANK SELECTOR Knob",
-              "type": "MemoryItem",
-              "response": "OFF"
-            },
-            {
-              "text": "BATT 1 & BATT 2 Switches",
-              "type": "Challenge",
-              "response": "OFF"
-            },
-            {
-              "text": "Airplane",
-              "type": "Challenge",
-              "response": "EVACUATE"
-            },
-            {
-              "text": "Fire",
-              "type": "Challenge",
-              "response": "EXTINGUISH"
-            },
-            {
-              "text": "ENGINE FIRE IN FLIGHT",
-              "type": "Section"
-            },
             {
               "text": "COND Lever",
               "type": "MemoryItem",
@@ -623,17 +580,13 @@
             },
             {
               "text": "Perform FORCED LANDING (3.8.1)",
-              "type": "Challenge"
+              "type": "Subtitle"
             }
           ]
         },
         {
-          "name": "FIRE, SMOKE, OR FUMES (CONTINUED)",
+          "name": "COCKPIT/CABIN ELECTRICAL FIRE IN FLIGHT",
           "entries": [
-            {
-              "text": "COCKPIT/CABIN ELECTRICAL FIRE IN FLIGHT",
-              "type": "Section"
-            },
             {
               "text": "Crew Oxygen Masks",
               "type": "MemoryItem",
@@ -708,7 +661,7 @@
               "type": "Subtitle"
             },
             {
-              "text": "X-TIE Circuit Breaker (L T ╠2►)",
+              "text": "X-TIE Circuit Breaker (L T \u25602\u25ba)",
               "type": "Challenge",
               "response": "PULL"
             },
@@ -742,12 +695,13 @@
             },
             {
               "text": "Land as soon as possible.",
-              "type": "Challenge"
-            },
-            {
-              "text": "COCKPIT/CABIN NON-ELECTRICAL FIRE IN FLIGHT",
-              "type": "Section"
-            },
+              "type": "Subtitle"
+            }
+          ]
+        },
+        {
+          "name": "COCKPIT/CABIN NON-ELECTRICAL FIRE IN FLIGHT",
+          "entries": [
             {
               "text": "Crew Oxygen Masks",
               "type": "MemoryItem",
@@ -830,11 +784,12 @@
             {
               "text": "Land as soon as possible.",
               "type": "Challenge"
-            },
-            {
-              "text": "COCKPIT/CABIN SMOKE EVACUATION",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "COCKPIT/CABIN SMOKE EVACUATION",
+          "entries": [
             {
               "text": "Crew Oxygen Masks",
               "type": "MemoryItem",
@@ -901,12 +856,8 @@
           ]
         },
         {
-          "name": "EMERGENCY LANDINGS",
+          "name": "FORCED LANDING",
           "entries": [
-            {
-              "text": "FORCED LANDING",
-              "type": "Section"
-            },
             {
               "text": "Seat Backs",
               "type": "Challenge",
@@ -974,11 +925,12 @@
               "text": "Airplane",
               "type": "Challenge",
               "response": "EVACUATE AS REQUIRED"
-            },
-            {
-              "text": "LANDING WITH GEAR UP",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "LANDING WITH GEAR UP",
+          "entries": [
             {
               "text": "If able, have ground personnel visually verify gear position.",
               "type": "Challenge"
@@ -1035,11 +987,12 @@
               "text": "Airplane",
               "type": "Challenge",
               "response": "EVACUATE AS REQUIRED"
-            },
-            {
-              "text": "LANDING WITHOUT ELEVATOR CONTROL",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "LANDING WITHOUT ELEVATOR CONTROL",
+          "entries": [
             {
               "text": "Passengers",
               "type": "Challenge",
@@ -1073,11 +1026,12 @@
             {
               "text": "Land in nose-high attitude.",
               "type": "Challenge"
-            },
-            {
-              "text": "DITCHING",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "DITCHING",
+          "entries": [
             {
               "text": "Passengers",
               "type": "Challenge",
@@ -1157,12 +1111,8 @@
           ]
         },
         {
-          "name": "STALL PREVENTION SYSTEM",
+          "name": "ERRONEOUS PUSHER/SHAKER OPERATION",
           "entries": [
-            {
-              "text": "ERRONEOUS PUSHER/SHAKER OPERATION",
-              "type": "Section"
-            },
             {
               "text": "Control Yoke",
               "type": "MemoryItem",
@@ -1179,7 +1129,7 @@
               "response": "SMOOTHLY TO LEVEL FLIGHT"
             },
             {
-              "text": "PUSHER Circuit Breaker (L B◄1╣)",
+              "text": "PUSHER Circuit Breaker (L B\u25c41\u2563)",
               "type": "Challenge",
               "response": "PULL"
             },
@@ -1198,12 +1148,12 @@
               "type": "Subtitle"
             },
             {
-              "text": "SPS CMP 1A Circuit Breaker (L T◄6╣)",
+              "text": "SPS CMP 1A Circuit Breaker (L T\u25c46\u2563)",
               "type": "Challenge",
               "response": "PULL"
             },
             {
-              "text": "SPS CMP 1B Circuit Breaker (L B◄10╣)",
+              "text": "SPS CMP 1B Circuit Breaker (L B\u25c410\u2563)",
               "type": "Challenge",
               "response": "PULL"
             },
@@ -1212,12 +1162,12 @@
               "type": "Subtitle"
             },
             {
-              "text": "SPS CMP 2A Circuit Breaker (L T◄5╣)",
+              "text": "SPS CMP 2A Circuit Breaker (L T\u25c45\u2563)",
               "type": "Challenge",
               "response": "PULL"
             },
             {
-              "text": "SPS CMP 2B Circuit Breaker (L B◄9╣)",
+              "text": "SPS CMP 2B Circuit Breaker (L B\u25c49\u2563)",
               "type": "Challenge",
               "response": "PULL"
             },
@@ -1226,12 +1176,12 @@
               "type": "Subtitle"
             },
             {
-              "text": "SPS CMP 2A Circuit Breaker (L T◄5╣)",
+              "text": "SPS CMP 2A Circuit Breaker (L T\u25c45\u2563)",
               "type": "Challenge",
               "response": "PULL"
             },
             {
-              "text": "SPS CMP 2B Circuit Breaker (L B◄9╣)",
+              "text": "SPS CMP 2B Circuit Breaker (L B\u25c49\u2563)",
               "type": "Challenge",
               "response": "PULL"
             },
@@ -1240,12 +1190,12 @@
               "type": "Subtitle"
             },
             {
-              "text": "SPS CMP 1A Circuit Breaker (L T◄6╣)",
+              "text": "SPS CMP 1A Circuit Breaker (L T\u25c46\u2563)",
               "type": "Challenge",
               "response": "PULL"
             },
             {
-              "text": "SPS CMP 1B Circuit Breaker (L B◄10╣)",
+              "text": "SPS CMP 1B Circuit Breaker (L B\u25c410\u2563)",
               "type": "Challenge",
               "response": "PULL"
             },
@@ -1256,11 +1206,12 @@
             {
               "text": "DISABLING BOTH SPS COMPUTERS WILL CAUSE PUSHER ICE MODE TO BE DISPLAYED, AND WHEN ICE PROTECTION SYSTEMS ARE OFF, AN ADDITIONAL ICE MODE FAIL CAUTION WILL BE DISPLAYED.",
               "type": "Caution"
-            },
-            {
-              "text": "ERRONEOUS PUSHER/SHAKER DURING LANDING FLARE",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "ERRONEOUS PUSHER/SHAKER DURING LANDING FLARE",
+          "entries": [
             {
               "text": "AP/TRIM DISC Switch",
               "type": "MemoryItem",
@@ -1288,11 +1239,12 @@
               "text": "PUSHER ICE MODE Alert",
               "type": "Challenge",
               "response": "CHECK"
-            },
-            {
-              "text": "PUSHER SERVO BINDING",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "PUSHER SERVO BINDING",
+          "entries": [
             {
               "text": "Control Yoke",
               "type": "MemoryItem",
@@ -1304,7 +1256,7 @@
               "response": "PRESS AND HOLD"
             },
             {
-              "text": "PUSHER Circuit Breaker (L B◄1╣)",
+              "text": "PUSHER Circuit Breaker (L B\u25c41\u2563)",
               "type": "Challenge",
               "response": "PULL"
             },
@@ -1330,12 +1282,8 @@
           ]
         },
         {
-          "name": "AUTOPILOT AND ELECTRIC TRIM",
+          "name": "AUTOPILOT MALFUNCTION",
           "entries": [
-            {
-              "text": "AUTOPILOT MALFUNCTION",
-              "type": "Section"
-            },
             {
               "text": "Control Yoke",
               "type": "MemoryItem",
@@ -1356,7 +1304,7 @@
               "response": "ADJUST TO RELIEVE FORCES"
             },
             {
-              "text": "AUTOPILOT Circuit Breaker (L B ╠2►)",
+              "text": "AUTOPILOT Circuit Breaker (L B \u25602\u25ba)",
               "type": "Challenge",
               "response": "PULL"
             },
@@ -1378,11 +1326,12 @@
             {
               "text": "Notify ATC of loss of RVSM capability.",
               "type": "Challenge"
-            },
-            {
-              "text": "YAW DAMPER MALFUNCTION",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "YAW DAMPER MALFUNCTION",
+          "entries": [
             {
               "text": "Yaw Damper",
               "type": "Challenge",
@@ -1393,7 +1342,7 @@
               "type": "Subtitle"
             },
             {
-              "text": "AUTOPILOT Circuit Breaker (L B ╠2►)",
+              "text": "AUTOPILOT Circuit Breaker (L B \u25602\u25ba)",
               "type": "Challenge",
               "response": "PULL"
             },
@@ -1401,11 +1350,12 @@
               "text": "Rudder Trim",
               "type": "Challenge",
               "response": "ADJUST AS NECESSARY"
-            },
-            {
-              "text": "TRIM MALFUNCTION",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "TRIM MALFUNCTION",
+          "entries": [
             {
               "text": "Control Yoke",
               "type": "MemoryItem",
@@ -1435,7 +1385,7 @@
               "type": "Subtitle"
             },
             {
-              "text": "ELEV TRIM Circuit Breaker (R T ╠3►)",
+              "text": "ELEV TRIM Circuit Breaker (R T \u25603\u25ba)",
               "type": "Challenge",
               "response": "PULL"
             },
@@ -1444,7 +1394,7 @@
               "type": "Subtitle"
             },
             {
-              "text": "RUD TRIM Circuit Breaker (R T ╠5►)",
+              "text": "RUD TRIM Circuit Breaker (R T \u25605\u25ba)",
               "type": "Challenge",
               "response": "PULL"
             },
@@ -1453,7 +1403,7 @@
               "type": "Subtitle"
             },
             {
-              "text": "AIL TRIM Circuit Breaker (R T ╠4►)",
+              "text": "AIL TRIM Circuit Breaker (R T \u25604\u25ba)",
               "type": "Challenge",
               "response": "PULL"
             },
@@ -1470,12 +1420,8 @@
           ]
         },
         {
-          "name": "ELECTRICAL",
+          "name": "TOTAL LOSS OF ELECTRICAL POWER",
           "entries": [
-            {
-              "text": "TOTAL LOSS OF ELECTRICAL POWER",
-              "type": "Section"
-            },
             {
               "text": "Crew Oxygen Masks (above 14,000 ft)",
               "type": "MemoryItem",
@@ -1533,12 +1479,8 @@
           ]
         },
         {
-          "name": "AVIONICS",
+          "name": "PFD/MFD FAILURE",
           "entries": [
-            {
-              "text": "PFD/MFD FAILURE",
-              "type": "Section"
-            },
             {
               "text": "LEFT PFD FAILURE",
               "type": "Subtitle"
@@ -1587,11 +1529,12 @@
             {
               "text": "Land as soon as practical.",
               "type": "Challenge"
-            },
-            {
-              "text": "AIR DATA AND ATTITUDE HEADING REFERENCE SYSTEM (ADAHRS) FAILURE",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "AIR DATA AND ATTITUDE HEADING REFERENCE SYSTEM (ADAHRS) FAILURE",
+          "entries": [
             {
               "text": "PFD SENSOR Softkey",
               "type": "Challenge",
@@ -1605,11 +1548,12 @@
             {
               "text": "Notify ATC of loss of RVSM capability.",
               "type": "Challenge"
-            },
-            {
-              "text": "AIRSPEED INDICATING SYSTEM FAILURE",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "AIRSPEED INDICATING SYSTEM FAILURE",
+          "entries": [
             {
               "text": "PITOT STALL HT Switch",
               "type": "Challenge",
@@ -1635,11 +1579,12 @@
             {
               "text": "Perform a precautionary landing, flying by reference to attitude, altitude, and power instruments.",
               "type": "Challenge"
-            },
-            {
-              "text": "ALTITUDE INDICATING SYSTEM FAILURE",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "ALTITUDE INDICATING SYSTEM FAILURE",
+          "entries": [
             {
               "text": "Refer to working altitude indicating system (other PFD and/or standby instrument).",
               "type": "Challenge"
@@ -1664,11 +1609,12 @@
             {
               "text": "Land as soon as practical.",
               "type": "Challenge"
-            },
-            {
-              "text": "AUTOPILOT UNABLE TO MAINTAIN ASSIGNED FLIGHT LEVEL ±65 FEET DURING RVSM OPERATIONS",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "AUTOPILOT UNABLE TO MAINTAIN ASSIGNED FLIGHT LEVEL \u00b165 FEET DURING RVSM OPERATIONS",
+          "entries": [
             {
               "text": "Disengage the autopilot.",
               "type": "Challenge"
@@ -1682,7 +1628,7 @@
               "type": "Challenge"
             },
             {
-              "text": "If autopilot is unable to maintain assigned flight level ±65 feet:",
+              "text": "If autopilot is unable to maintain assigned flight level \u00b165 feet:",
               "type": "Subtitle"
             },
             {
@@ -1696,12 +1642,8 @@
           ]
         },
         {
-          "name": "MISCELLANEOUS",
+          "name": "OXYGEN USE \u2014 FRONT SEATS",
           "entries": [
-            {
-              "text": "OXYGEN USE — FRONT SEATS",
-              "type": "Section"
-            },
             {
               "text": "IF TIME PERMITS, BEFORE USING OXYGEN, REMOVE ANY POTENTIALLY FLAMMABLE SUBSTANCES FROM YOUR FACE (OILS, GREASE, SOAP, LIPSTICK, MAKEUP, ETC.).",
               "type": "Warning"
@@ -1738,11 +1680,12 @@
               "text": "Oxygen Mask Regulator",
               "type": "Challenge",
               "response": "NORMAL (100% if required)"
-            },
-            {
-              "text": "CRACKED OR DELAMINATED WINDSHIELD OR WINDOW IN FLIGHT",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "CRACKED OR DELAMINATED WINDSHIELD OR WINDOW IN FLIGHT",
+          "entries": [
             {
               "text": "Crew Oxygen Masks (above 14,000 ft)",
               "type": "MemoryItem",
@@ -1831,12 +1774,8 @@
           ]
         },
         {
-          "name": "WARNING (RED) CAS MESSAGES — IN FLIGHT",
+          "name": "AUTO DESCENT",
           "entries": [
-            {
-              "text": "AUTO DESCENT",
-              "type": "Section"
-            },
             {
               "text": "To acknowledge and silence EDM alert:",
               "type": "Subtitle"
@@ -1854,11 +1793,12 @@
               "text": "AP/TRIM DISC Switch",
               "type": "Challenge",
               "response": "PRESS AND RELEASE"
-            },
-            {
-              "text": "CABIN ALT HIGH",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "CABIN ALT HIGH",
+          "entries": [
             {
               "text": "Crew Oxygen Masks (above 14,000 ft)",
               "type": "MemoryItem",
@@ -1920,17 +1860,17 @@
               "type": "Subtitle"
             },
             {
-              "text": "PRESS CTRL 1 Circuit Breaker (L B ◄3╣)",
+              "text": "PRESS CTRL 1 Circuit Breaker (L B \u25c43\u2563)",
               "type": "Challenge",
               "response": "CHECK, RESET ONE TIME IF OPEN"
             },
             {
-              "text": "PRESS CTRL 2 Circuit Breaker (R T ◄1╣)",
+              "text": "PRESS CTRL 2 Circuit Breaker (R T \u25c41\u2563)",
               "type": "Challenge",
               "response": "CHECK, RESET ONE TIME IF OPEN"
             },
             {
-              "text": "MASS FLOW Circuit Breaker (R T ◄5╣)",
+              "text": "MASS FLOW Circuit Breaker (R T \u25c45\u2563)",
               "type": "Challenge",
               "response": "CHECK, RESET ONE TIME IF OPEN"
             },
@@ -1959,18 +1899,19 @@
               "response": "OFF"
             },
             {
-              "text": "EMERG PRESS Circuit Breaker (R T ◄2╣)",
+              "text": "EMERG PRESS Circuit Breaker (R T \u25c42\u2563)",
               "type": "Challenge",
               "response": "CHECK, RESET ONE TIME IF OPEN"
             },
             {
               "text": "USE OF DEFROST TOGETHER WITH EMERG PRESS IS PROHIBITED",
               "type": "Caution"
-            },
-            {
-              "text": "CHECK GEAR",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "CHECK GEAR",
+          "entries": [
             {
               "text": "IF UNDER 500 FT AGL:",
               "type": "Subtitle"
@@ -2001,11 +1942,12 @@
             {
               "text": "Perform LANDING GEAR FAILS TO EXTEND (3A.4.2).",
               "type": "Challenge"
-            },
-            {
-              "text": "DE-ICE FAIL",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "DE-ICE FAIL",
+          "entries": [
             {
               "text": "POWER",
               "type": "Challenge",
@@ -2043,7 +1985,7 @@
               "type": "Challenge"
             },
             {
-              "text": "If oil temperature exceeds 90°C and is rising:",
+              "text": "If oil temperature exceeds 90\u00b0C and is rising:",
               "type": "Subtitle"
             },
             {
@@ -2059,12 +2001,13 @@
             {
               "text": "Approach Speeds (Pusher Ice Mode)",
               "type": "Challenge",
-              "response": "Flaps UP: 122 – 133 KIAS, Flaps T/O: 119 – 130 KIAS"
-            },
-            {
-              "text": "DOOR UNLOCKED",
-              "type": "Section"
-            },
+              "response": "Flaps UP: 122 \u2013 133 KIAS, Flaps T/O: 119 \u2013 130 KIAS"
+            }
+          ]
+        },
+        {
+          "name": "DOOR UNLOCKED",
+          "entries": [
             {
               "text": "Crew Oxygen Masks (above 14,000 ft)",
               "type": "MemoryItem",
@@ -2101,11 +2044,12 @@
             {
               "text": "Land as soon as possible.",
               "type": "Challenge"
-            },
-            {
-              "text": "ENGINE CHIP",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "ENGINE CHIP",
+          "entries": [
             {
               "text": "Engine Instruments",
               "type": "Challenge",
@@ -2123,11 +2067,12 @@
             {
               "text": "Maintenance required.",
               "type": "Challenge"
-            },
-            {
-              "text": "GEN FAIL",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "GEN FAIL",
+          "entries": [
             {
               "text": "STARTER GEN Switch",
               "type": "Challenge",
@@ -2169,15 +2114,16 @@
             {
               "text": "Descend to FL190 or below.",
               "type": "Challenge"
-            },
-            {
-              "text": "ITT HIGH",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "ITT HIGH",
+          "entries": [
             {
               "text": "POWER Lever",
               "type": "Challenge",
-              "response": "REDUCE BELOW 850°C AND ITT HIGH WARNING EXTINGUISHES OR MINIMUM POWER FOR SAFE FLIGHT"
+              "response": "REDUCE BELOW 850\u00b0C AND ITT HIGH WARNING EXTINGUISHES OR MINIMUM POWER FOR SAFE FLIGHT"
             },
             {
               "text": "If ITT HIGH Warning remains:",
@@ -2190,11 +2136,12 @@
             {
               "text": "HIGH ITT AT INTERMEDIATE POWER SETTINGS MAY BE AN EARLY INDICATION OF IMPENDING ENGINE FAILURE.",
               "type": "Caution"
-            },
-            {
-              "text": "NG HIGH",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "NG HIGH",
+          "entries": [
             {
               "text": "POWER Lever",
               "type": "Challenge",
@@ -2211,11 +2158,12 @@
             {
               "text": "HIGH NG AT INTERMEDIATE POWER SETTINGS MAY BE AN EARLY INDICATION OF IMPENDING ENGINE FAILURE.",
               "type": "Caution"
-            },
-            {
-              "text": "NP HIGH",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "NP HIGH",
+          "entries": [
             {
               "text": "PROP Lever",
               "type": "Challenge",
@@ -2265,11 +2213,12 @@
             {
               "text": "Land as soon as possible.",
               "type": "Challenge"
-            },
-            {
-              "text": "OIL PRESS LOW",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "OIL PRESS LOW",
+          "entries": [
             {
               "text": "POWER Lever",
               "type": "Challenge",
@@ -2282,11 +2231,12 @@
             {
               "text": "OIL PRESSURES UNDER 60 PSI MAY BE AN EARLY INDICATION OF IMPENDING ENGINE FAILURE.",
               "type": "Caution"
-            },
-            {
-              "text": "OIL TEMP HIGH",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "OIL TEMP HIGH",
+          "entries": [
             {
               "text": "POWER Lever",
               "type": "Challenge",
@@ -2315,13 +2265,14 @@
               "type": "Challenge"
             },
             {
-              "text": "OIL TEMPERATURES ABOVE 110°C ARE UNSAFE AND MAY LEAD TO A LOSS OF OIL PRESSURE AND/OR ENGINE FAILURE.",
+              "text": "OIL TEMPERATURES ABOVE 110\u00b0C ARE UNSAFE AND MAY LEAD TO A LOSS OF OIL PRESSURE AND/OR ENGINE FAILURE.",
               "type": "Caution"
-            },
-            {
-              "text": "OVERSPEED",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "OVERSPEED",
+          "entries": [
             {
               "text": "Power Lever",
               "type": "Challenge",
@@ -2331,11 +2282,12 @@
               "text": "Pitch",
               "type": "Challenge",
               "response": "UP AS REQUIRED"
-            },
-            {
-              "text": "PUSHER ICE MODE",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "PUSHER ICE MODE",
+          "entries": [
             {
               "text": "IF IN ICING CONDITIONS OR IF RESIDUAL ICE REMAINS ON THE AIRFRAME:",
               "type": "Subtitle"
@@ -2348,7 +2300,7 @@
             {
               "text": "Approach Speeds (Pusher Ice Mode)",
               "type": "Challenge",
-              "response": "Flaps T/O: 119 – 130 KIAS"
+              "response": "Flaps T/O: 119 \u2013 130 KIAS"
             },
             {
               "text": "IF NOT IN ICING CONDITIONS AND NO RESIDUAL ICE ON THE AIRFRAME:",
@@ -2367,13 +2319,14 @@
             {
               "text": "LANDING WITH NORMAL APPROACH AIRSPEEDS WHILE IN PUSHER ICE MODE MAY CAUSE AN ERRONEOUS PUSH DURING THE LANDING FLARE.",
               "type": "Caution"
-            },
+            }
+          ]
+        },
+        {
+          "name": "RUD LIM FAIL",
+          "entries": [
             {
-              "text": "RUD LIM FAIL",
-              "type": "Section"
-            },
-            {
-              "text": "RUDDER LIMITER Circuit Breaker (R T ╠1►)",
+              "text": "RUDDER LIMITER Circuit Breaker (R T \u25601\u25ba)",
               "type": "Challenge",
               "response": "PULL"
             },
@@ -2411,35 +2364,12 @@
               "text": "Approach Speed (Normal Mode)",
               "type": "Challenge",
               "response": "110 KIAS"
-            },
-            {
-              "text": "STICK PUSH",
-              "type": "Section"
-            },
-            {
-              "text": "Control Yoke",
-              "type": "MemoryItem",
-              "response": "GRASP AND MAINTAIN CONTROL"
-            },
-            {
-              "text": "Pitch",
-              "type": "MemoryItem",
-              "response": "REDUCE ANGLE-OF-ATTACK"
-            },
-            {
-              "text": "POWER Lever",
-              "type": "Challenge",
-              "response": "INCREASE AS REQUIRED"
-            },
-            {
-              "text": "Airplane",
-              "type": "Challenge",
-              "response": "RECOVER TO LEVEL FLIGHT"
-            },
-            {
-              "text": "STICK SHAKER",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "STICK PUSH",
+          "entries": [
             {
               "text": "Control Yoke",
               "type": "MemoryItem",
@@ -2459,11 +2389,37 @@
               "text": "Airplane",
               "type": "Challenge",
               "response": "RECOVER TO LEVEL FLIGHT"
+            }
+          ]
+        },
+        {
+          "name": "STICK SHAKER",
+          "entries": [
+            {
+              "text": "Control Yoke",
+              "type": "MemoryItem",
+              "response": "GRASP AND MAINTAIN CONTROL"
             },
             {
-              "text": "TORQUE HIGH",
-              "type": "Section"
+              "text": "Pitch",
+              "type": "MemoryItem",
+              "response": "REDUCE ANGLE-OF-ATTACK"
             },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "INCREASE AS REQUIRED"
+            },
+            {
+              "text": "Airplane",
+              "type": "Challenge",
+              "response": "RECOVER TO LEVEL FLIGHT"
+            }
+          ]
+        },
+        {
+          "name": "TORQUE HIGH",
+          "entries": [
             {
               "text": "PROP Lever",
               "type": "Challenge",
@@ -2481,11 +2437,12 @@
             {
               "text": "Land as soon as possible, using minimum power.",
               "type": "Challenge"
-            },
-            {
-              "text": "UNDERSPEED PROTECT ACTIVE",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "UNDERSPEED PROTECT ACTIVE",
+          "entries": [
             {
               "text": "POWER Lever",
               "type": "Challenge",
@@ -2516,11 +2473,12 @@
               "text": "Autopilot",
               "type": "Challenge",
               "response": "CHANGE MODES TO INCREASE AIRSPEED"
-            },
-            {
-              "text": "WSH HEAT ON",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "WSH HEAT ON",
+          "entries": [
             {
               "text": "WINDSH HEAT Switch",
               "type": "Challenge",
@@ -2577,12 +2535,8 @@
           ]
         },
         {
-          "name": "WARNING (RED) CAS MESSAGES — ON GROUND",
+          "name": "CHECK GEAR \u2014 ON GROUND",
           "entries": [
-            {
-              "text": "CHECK GEAR — ON GROUND",
-              "type": "Section"
-            },
             {
               "text": "LANDING GEAR Control",
               "type": "Challenge",
@@ -2599,11 +2553,12 @@
             {
               "text": "Maintenance required before flight.",
               "type": "Challenge"
-            },
-            {
-              "text": "DE-ICE FAIL — ON GROUND",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "DE-ICE FAIL \u2014 ON GROUND",
+          "entries": [
             {
               "text": "DE-ICE BOOTS Switch",
               "type": "Challenge",
@@ -2612,11 +2567,12 @@
             {
               "text": "Maintenance required before flight into known icing.",
               "type": "Challenge"
-            },
-            {
-              "text": "DOOR UNLOCKED — ON GROUND",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "DOOR UNLOCKED \u2014 ON GROUND",
+          "entries": [
             {
               "text": "If taxiing, stop airplane in a safe location.",
               "type": "Challenge"
@@ -2637,11 +2593,12 @@
             {
               "text": "Maintenance required before flight.",
               "type": "Challenge"
-            },
-            {
-              "text": "ENGINE CHIP — ON GROUND",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "ENGINE CHIP \u2014 ON GROUND",
+          "entries": [
             {
               "text": "BEFORE ENGINE START",
               "type": "Subtitle"
@@ -2669,11 +2626,12 @@
             {
               "text": "Maintenance required before flight.",
               "type": "Challenge"
-            },
-            {
-              "text": "ITT HIGH — ON GROUND",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "ITT HIGH \u2014 ON GROUND",
+          "entries": [
             {
               "text": "COND Lever",
               "type": "MemoryItem",
@@ -2694,18 +2652,19 @@
               "response": "PRESS & RELEASE"
             },
             {
-              "text": "After 30 seconds or ITT below 750°C whichever occurs first:",
+              "text": "After 30 seconds or ITT below 750\u00b0C whichever occurs first:",
               "type": "Subtitle"
             },
             {
               "text": "STARTER GEN Switch",
               "type": "Challenge",
               "response": "OFF"
-            },
-            {
-              "text": "OIL TEMP HIGH — ON GROUND",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "OIL TEMP HIGH \u2014 ON GROUND",
+          "entries": [
             {
               "text": "Airplane",
               "type": "Challenge",
@@ -2737,11 +2696,12 @@
             {
               "text": "Maintenance required before flight.",
               "type": "Challenge"
-            },
-            {
-              "text": "OXYGEN USE — FRONT SEATS",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "OXYGEN USE \u2014 FRONT SEATS",
+          "entries": [
             {
               "text": "IF TIME PERMITS, BEFORE USING OXYGEN, REMOVE ANY POTENTIALLY FLAMMABLE SUBSTANCES FROM YOUR FACE (OILS, GREASE, SOAP, LIPSTICK, MAKEUP, ETC.).",
               "type": "Warning"
@@ -2778,11 +2738,12 @@
               "text": "Oxygen Mask Regulator",
               "type": "Challenge",
               "response": "NORMAL (100% if required)"
-            },
-            {
-              "text": "CRACKED OR DELAMINATED WINDSHIELD OR WINDOW IN FLIGHT",
-              "type": "Section"
-            },
+            }
+          ]
+        },
+        {
+          "name": "CRACKED OR DELAMINATED WINDSHIELD OR WINDOW IN FLIGHT",
+          "entries": [
             {
               "text": "Crew Oxygen Masks (above 14,000 ft)",
               "type": "MemoryItem",
@@ -2871,12 +2832,8 @@
           ]
         },
         {
-          "name": "WARNING (RED) CAS MESSAGES — IN FLIGHT",
+          "name": "AUTO DESCENT",
           "entries": [
-            {
-              "text": "AUTO DESCENT",
-              "type": "Section"
-            },
             {
               "text": "To acknowledge and silence EDM alert:",
               "type": "Subtitle"
