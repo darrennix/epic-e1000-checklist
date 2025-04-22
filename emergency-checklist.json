@@ -15,775 +15,6 @@
       "value": "A"
     }
   ],
-  "groups": [
-    {
-      "name": "NORMAL PROCEDURES",
-      "checklists": [
-        {
-          "name": "BEFORE STARTING ENGINE",
-          "entries": [
-            {
-              "text": "Preflight Inspection",
-              "type": "Challenge",
-              "response": "COMPLETE"
-            },
-            {
-              "text": "Main Entry Door",
-              "type": "Challenge",
-              "response": "CLOSED & LATCHED"
-            },
-            {
-              "text": "Seats and Seatbelts",
-              "type": "Challenge",
-              "response": "SECURE"
-            },
-            {
-              "text": "Passenger Briefing",
-              "type": "Challenge",
-              "response": "COMPLETE"
-            },
-            {
-              "text": "Glare Shield",
-              "type": "Challenge",
-              "response": "STOWED"
-            },
-            {
-              "text": "MAN OVRD Lever",
-              "type": "Challenge",
-              "response": "STOWED"
-            },
-            {
-              "text": "POWER Lever",
-              "type": "Challenge",
-              "response": "IDLE"
-            },
-            {
-              "text": "TO PREVENT DAMAGE TO ENGINE CONTROLS, DO NOT MOVE THE POWER LEVER AFT OF THE IDLE GATE WITH ENGINE NOT RUNNING.",
-              "type": "Caution",
-              "justification": "center"
-            },
-            {
-              "text": "PROP Lever",
-              "type": "Challenge",
-              "response": "FEATHER"
-            },
-            {
-              "text": "COND Lever",
-              "type": "Challenge",
-              "response": "FUEL CUTOFF"
-            },
-            {
-              "text": "Climate Controls",
-              "type": "Challenge",
-              "response": "AS REQUIRED"
-            },
-            {
-              "text": "LIGHTS and ICE Switches",
-              "type": "Challenge",
-              "response": "MIN. REQUIRED"
-            },
-            {
-              "text": "BATT 1 & BATT 2 Switches",
-              "type": "Challenge",
-              "response": "ON"
-            },
-            {
-              "text": "BATT 1 & BATT 2 Voltages",
-              "type": "Challenge",
-              "response": "24.2 V MINIMUM"
-            },
-            {
-              "text": "Fuel-On-Board Totalizer",
-              "type": "Challenge",
-              "response": "FOB SYNC"
-            },
-            {
-              "text": "Flight Controls",
-              "type": "Challenge",
-              "response": "FREE & CORRECT"
-            },
-            {
-              "text": "Autopilot",
-              "type": "Challenge",
-              "response": "TEST"
-            },
-            {
-              "text": "Stall Prevention System",
-              "type": "Challenge",
-              "response": "TEST"
-            },
-            {
-              "text": "Landing Field Elevation",
-              "type": "Challenge",
-              "response": "VERIFY/SET"
-            },
-            {
-              "text": "Avionics/Navigation",
-              "type": "Challenge",
-              "response": "SET"
-            },
-            {
-              "text": "Weather & NOTAMS",
-              "type": "Challenge",
-              "response": "CHECK"
-            },
-            {
-              "text": "Altimeters",
-              "type": "Challenge",
-              "response": "SET"
-            },
-            {
-              "text": "Clearance Delivery",
-              "type": "Challenge",
-              "response": "CHECK"
-            },
-            {
-              "text": "Transponder",
-              "type": "Challenge",
-              "response": "AS REQUIRED"
-            }
-          ],
-          "linkedAlerts": []
-        },
-        {
-          "name": "STARTING ENGINE",
-          "entries": [
-            {
-              "text": "Exterior Lights",
-              "type": "Challenge",
-              "response": "AS REQUIRED"
-            },
-            {
-              "text": "Propeller Area",
-              "type": "Challenge",
-              "response": "CLEAR"
-            },
-            {
-              "text": "FUEL TANK SELECTOR Knob",
-              "type": "Challenge",
-              "response": "LEFT"
-            },
-            {
-              "text": "Pre-Start Switches",
-              "type": "Challenge",
-              "response": "ALL ON"
-            },
-            {
-              "text": "START Switch",
-              "type": "Challenge",
-              "response": "PRESS & RELEASE"
-            },
-            {
-              "text": "Oil Pressure",
-              "type": "Challenge",
-              "response": "VERIFY RISE",
-              "justification": "indent1"
-            },
-            {
-              "text": "NG",
-              "type": "Challenge",
-              "response": "12% MINIMUM",
-              "justification": "indent1"
-            },
-            {
-              "text": "NG",
-              "type": "Challenge",
-              "response": "VERIFY STABLE ABOVE 51%"
-            },
-            {
-              "text": "If oil pressure does not rise or NG does not reach minimum speed:",
-              "type": "Note"
-            },
-            {
-              "text": "DISCONTINUE ENGINE START",
-              "type": "Note",
-              "justification": "indent1"
-            },
-            {
-              "text": "If NG stabilizes below 51% or ITT at idle approaches 750°C:",
-              "type": "Note"
-            },
-            {
-              "text": "COND Lever...HIGH",
-              "type": "Note",
-              "justification": "indent1"
-            }
-          ],
-          "linkedAlerts": []
-        },
-        {
-          "name": "AFTER START/BEFORE TAXI",
-          "entries": [
-            {
-              "text": "IGNITER Switch",
-              "type": "Challenge",
-              "response": "AUTO"
-            },
-            {
-              "text": "PRE-TAXI Switches",
-              "type": "Challenge",
-              "response": "ALL ON (except Pressurization)"
-            },
-            {
-              "text": "Crew Oxygen Masks",
-              "type": "Challenge",
-              "response": "PRESSURIZED"
-            },
-            {
-              "text": "Climate Controls",
-              "type": "Challenge",
-              "response": "AS REQUIRED"
-            },
-            {
-              "text": "PROP Lever",
-              "type": "Challenge",
-              "response": "MAX RPM"
-            },
-            {
-              "text": "COND Lever",
-              "type": "Challenge",
-              "response": "HIGH"
-            },
-            {
-              "text": "ALTN AMP Indicator",
-              "type": "Challenge",
-              "response": "ZERO"
-            },
-            {
-              "text": "TAXI Light",
-              "type": "Challenge",
-              "response": "ON"
-            },
-            {
-              "text": "Brakes",
-              "type": "Challenge",
-              "response": "CHECK"
-            },
-            {
-              "text": "Flight and Standby Instruments",
-              "type": "Challenge",
-              "response": "CHECK"
-            },
-            {
-              "text": "Taxi Instructions",
-              "type": "Challenge",
-              "response": "CHECK"
-            }
-
-          ],
-          "linkedAlerts": []
-        },
-        {
-          "name": "BEFORE TAKEOFF",
-          "entries": [
-            {
-              "text": "De-Ice Boot System",
-              "type": "Challenge",
-              "response": "TEST"
-            },
-            {
-              "text": "(1500 RPM, prior to flight into icing conditions)",
-              "type": "Note"
-            },
-            {
-              "text": "Propeller Overspeed Governor",
-              "type": "Challenge",
-              "response": "TEST"
-            },
-            {
-              "text": "(first flight of day)",
-              "type": "Note"
-            },
-            {
-              "text": "Inertial Separator",
-              "type": "Challenge",
-              "response": "TEST"
-            },
-            {
-              "text": "(prior to flight into icing conditions)",
-              "type": "Note"
-            },
-            {
-              "text": "Engine Instruments",
-              "type": "Challenge",
-              "response": "NORMAL"
-            },
-            {
-              "text": "Flight Controls",
-              "type": "Challenge",
-              "response": "FREE & CORRECT"
-            },
-            {
-              "text": "Trims",
-              "type": "Challenge",
-              "response": "SET FOR TAKEOFF"
-            },
-            {
-              "text": "Flaps",
-              "type": "Challenge",
-              "response": "T/O"
-            },
-            {
-              "text": "Fuel Quantity, Balance",
-              "type": "Challenge",
-              "response": "CHECK"
-            },
-            {
-              "text": "Avionics / Navigation",
-              "type": "Challenge",
-              "response": "SET"
-            },
-            {
-              "text": "PRE-TAXI Switches",
-              "type": "Challenge",
-              "response": "CHECK ON"
-            },
-            {
-              "text": "SYSTEMS Switches",
-              "type": "Challenge",
-              "response": "CHECK OFF"
-            },
-            {
-              "text": "PROP Lever",
-              "type": "Challenge",
-              "response": "MAX RPM"
-            },
-            {
-              "text": "Autopilot and Yaw Damper",
-              "type": "Challenge",
-              "response": "OFF"
-            },
-            {
-              "text": "TO/GA Takeoff Check",
-              "type": "Challenge",
-              "response": "COMPLETE"
-            },
-            {
-              "text": "Takeoff Briefing",
-              "type": "Challenge",
-              "response": "COMPLETE"
-            }
-          ],
-          "linkedAlerts": []
-        },
-        {
-          "name": "TAKING RUNWAY",
-          "entries": [
-            {
-              "text": "IGNITER Switch",
-              "type": "Challenge",
-              "response": "ON"
-            },
-            {
-              "text": "PITOT STALL HT Switch",
-              "type": "Challenge",
-              "response": "ON"
-            },
-            {
-              "text": "External Lights",
-              "type": "Challenge",
-              "response": "AS REQUIRED"
-            },
-            {
-              "text": "CAS Messages",
-              "type": "Challenge",
-              "response": "NO RED OR AMBER MSGS"
-            }
-          ],
-          "linkedAlerts": []
-        },
-        {
-          "name": "TAKEOFF / CLIMB",
-          "entries": [
-            {
-              "text": "Rotate",
-              "type": "Challenge",
-              "response": "90 KIAS"
-            },
-            {
-              "text": "Brakes",
-              "type": "Challenge",
-              "response": "APPLY BRIEFLY"
-            },
-            {
-              "text": "Landing Gear",
-              "type": "Challenge",
-              "response": "UP"
-            },
-            {
-              "text": "Flaps",
-              "type": "Challenge",
-              "response": "UP"
-            },
-            {
-              "text": "Best Rate of Climb Speed",
-              "type": "Challenge",
-              "response": "AS REQUIRED"
-            },
-            {
-              "text": "(VY 150 to FL240 then 140)",
-              "type": "Note"
-            },
-            {
-              "text": "Trim or Yaw Damper",
-              "type": "Challenge",
-              "response": "SET"
-            },
-            {
-              "text": "IGNITER Switch",
-              "type": "Challenge",
-              "response": "AUTO"
-            },
-            {
-              "text": "Engine Instruments",
-              "type": "Challenge",
-              "response": "MONITOR"
-            },
-            {
-              "text": "External lights",
-              "type": "Challenge",
-              "response": "AS REQUIRED"
-            },
-            {
-              "text": "Pressurization",
-              "type": "Challenge",
-              "response": "CHECK"
-            }
-          ],
-          "linkedAlerts": []
-        },
-        {
-          "name": "CRUISE",
-          "entries": [
-            {
-              "text": "POWER Lever",
-              "type": "Challenge",
-              "response": "MAXIMUM CRUISE POWER OR LESS"
-            },
-            {
-              "text": "PROP Lever",
-              "type": "Challenge",
-              "response": "AS DESIRED"
-            },
-            {
-              "text": "Engine Instruments",
-              "type": "Challenge",
-              "response": "MONITOR"
-            },
-            {
-              "text": "Pressurization",
-              "type": "Challenge",
-              "response": "MONITOR"
-            },
-            {
-              "text": "Fuel Quantity, Balance",
-              "type": "Challenge",
-              "response": "MONITOR"
-            },
-            {
-              "text": "ICE Switches",
-              "type": "Challenge",
-              "response": "AS REQUIRED"
-            },
-            {
-              "text": "Guard Frequency",
-              "type": "Challenge",
-              "response": "MONITOR"
-            }
-          ],
-          "linkedAlerts": []
-        },
-        {
-          "name": "ARRIVAL / DESCENT",
-          "entries": [
-            {
-              "text": "PROP Lever",
-              "type": "Challenge",
-              "response": "MAX RPM"
-            },
-            {
-              "text": "Landing Field Elevation",
-              "type": "Challenge",
-              "response": "CHECK"
-            },
-            {
-              "text": "Fuel Quantity, Balance",
-              "type": "Challenge",
-              "response": "MONITOR"
-            },
-            {
-              "text": "Arrival",
-              "type": "Challenge",
-              "response": "SELECTED"
-            },
-            {
-              "text": "Weather & NOTAMS",
-              "type": "Challenge",
-              "response": "CHECK"
-            }
-          ],
-          "linkedAlerts": []
-        },
-        {
-          "name": "APPROACH",
-          "entries": [
-            {
-              "text": "PROP Lever",
-              "type": "Challenge",
-              "response": "MAX RPM"
-            },
-            {
-              "text": "COND Lever",
-              "type": "Challenge",
-              "response": "HIGH"
-            },
-            {
-              "text": "IGNITER Switch",
-              "type": "Challenge",
-              "response": "ON"
-            },
-            {
-              "text": "Landing Lights",
-              "type": "Challenge",
-              "response": "ON"
-            },
-            {
-              "text": "Altimeters",
-              "type": "Challenge",
-              "response": "SET"
-            },
-            {
-              "text": "Pusher Ice Mode Alert",
-              "type": "Challenge",
-              "response": "CHECK IF ACTIVE"
-            },
-            {
-              "text": "Approach and Landing Brief",
-              "type": "Challenge",
-              "response": "COMPLETE"
-            }
-          ],
-          "linkedAlerts": []
-        },
-        {
-          "name": "BEFORE LANDING",
-          "entries": [
-            {
-              "text": "Flaps",
-              "type": "Challenge",
-              "response": "SET"
-            },
-            {
-              "text": "Landing Gear",
-              "type": "Challenge",
-              "response": "DOWN"
-            },
-            {
-              "text": "Brakes",
-              "type": "Challenge",
-              "response": "TEST"
-            },
-            {
-              "text": "Yaw Damper",
-              "type": "Challenge",
-              "response": "OFF"
-            },
-            {
-              "text": "Rudder Trim",
-              "type": "Challenge",
-              "response": "CENTER"
-            },
-            {
-              "text": "Approach Speeds:",
-              "type": "Note"
-            },
-            {
-              "text": "Flaps UP: 115 KIAS (Normal Mode)",
-              "type": "Note",
-              "justification": "indent1"
-            },
-            {
-              "text": "Flaps T/O: 110 KIAS (Normal Mode), 122-133 KIAS (Pusher Ice Mode)",
-              "type": "Note",
-              "justification": "indent1"
-            },
-            {
-              "text": "Flaps FULL: 95 KIAS (Normal Mode)",
-              "type": "Note",
-              "justification": "indent1"
-            }
-          ],
-          "linkedAlerts": []
-        },
-        {
-          "name": "AFTER LANDING",
-          "entries": [
-            {
-              "text": "Lights",
-              "type": "Challenge",
-              "response": "AS REQUIRED"
-            },
-            {
-              "text": "PITOT STALL HT Switch",
-              "type": "Challenge",
-              "response": "OFF"
-            },
-            {
-              "text": "IGNITER Switch",
-              "type": "Challenge",
-              "response": "AUTO"
-            },
-            {
-              "text": "Flaps",
-              "type": "Challenge",
-              "response": "UP"
-            },
-            {
-              "text": "DE-ICE BOOTS Switch",
-              "type": "Challenge",
-              "response": "OFF"
-            },
-            {
-              "text": "INERT SEP Switch",
-              "type": "Challenge",
-              "response": "OFF"
-            },
-            {
-              "text": "Flight Plan",
-              "type": "Challenge",
-              "response": "CANCEL"
-            }          
-          ],
-          "linkedAlerts": []
-        },
-        {
-          "name": "SHUTDOWN",
-          "entries": [
-            {
-              "text": "POWER Lever",
-              "type": "Challenge",
-              "response": "IDLE"
-            },
-            {
-              "text": "COND Lever",
-              "type": "Challenge",
-              "response": "LOW"
-            },
-            {
-              "text": "PROP Lever",
-              "type": "Challenge",
-              "response": "FEATHER"
-            },
-            {
-              "text": "Lights",
-              "type": "Challenge",
-              "response": "AS REQUIRED"
-            },
-            {
-              "text": "Climate Controls",
-              "type": "Challenge",
-              "response": "AS REQUIRED"
-            },
-            {
-              "text": "PRE-TAXI Switches",
-              "type": "Challenge",
-              "response": "ALL OFF"
-            },
-            {
-              "text": "Engine Cooldown",
-              "type": "Challenge",
-              "response": "COMPLETE"
-            },
-            {
-              "text": "COND Lever",
-              "type": "Challenge",
-              "response": "FUEL CUTOFF"
-            },
-            {"text":"", "type":"Note"},
-            {"text":"After Ng is below 10%:", "type":"Subtitle"},
-            {
-              "text": "L & R FUEL PUMP Switchess",
-              "type": "Challenge",
-              "response": "OFF"
-            },
-            {
-              "text": "Fuel Selector",
-              "type": "Challenge",
-              "response": "LEFT"
-            },
-            {
-              "text": "Flight Plan",
-              "type": "Challenge",
-              "response": "CANCEL"
-            }     ,            
-
-            {
-              "text": "BATT 1 & BATT 2 Switches",
-              "type": "Challenge",
-              "response": "OFF"
-            }                 
-
-            
-        
-          ],
-          "linkedAlerts": []
-        }
-      ],
-      "enableGoToNextChecklist": true
-    },
-    {
-      "name": "EMERGENCY PROCEDURES",
-      "checklists": [
-        {
-          "name": "ENGINE FAILURE DURING TAKEOFF",
-          "entries": [
-            {
-              "text": "Before Rotation",
-              "type": "Subtitle",
-              "justification": "center"
-            },
-            {
-              "text": "POWER Lever",
-              "type": "Challenge",
-              "response": "IDLE"
-            },
-            {
-              "text": "Brakes",
-              "type": "Challenge",
-              "response": "AS REQUIRED"
-            },
-            {
-              "text": "After Rotation",
-              "type": "Subtitle",
-              "justification": "center"
-            },
-            {
-              "text": "Pitch Attitude",
-              "type": "Challenge",
-              "response": "7° NOSE UP"
-            },
-            {
-              "text": "Airspeed",
-              "type": "Challenge",
-              "response": "95 KIAS MINIMUM"
-            },
-            {
-              "text": "Landing Gear",
-              "type": "Challenge",
-              "response": "AS REQUIRED"
-            },
-            {
-              "text": "Flaps",
-              "type": "Challenge",
-              "response": "AS REQUIRED"
-            }
-          ],
-          "linkedAlerts": []
-        }
-      ],
-      "enableGoToNextChecklist": false
-    }
-  ],
   "branchChecklists": [],
   "entryTypes": [
     {
@@ -834,5 +65,2860 @@
   "defaultChecklist": {
     "group": 0,
     "checklist": 0
-  }
+  },
+  "groups": [
+    {
+      "name": "EMERGENCY PROCEDURES",
+      "checklists": [
+        {
+          "name": "ENGINE FAILURE IN FLIGHT",
+          "entries": [
+            {
+              "text": "POWER Lever",
+              "type": "MemoryItem",
+              "response": "IDLE"
+            },
+            {
+              "text": "PROP Lever",
+              "type": "MemoryItem",
+              "response": "FEATHER"
+            },
+            {
+              "text": "Turn towards nearest landing area.",
+              "type": "MemoryItem"
+            },
+            {
+              "text": "Crew Oxygen Masks (above 14,000 ft)",
+              "type": "MemoryItem",
+              "response": "DON"
+            },
+            {
+              "text": "MASK MICS Switch",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "Flaps",
+              "type": "Challenge",
+              "response": "UP"
+            },
+            {
+              "text": "Best Glide Airspeed",
+              "type": "Challenge",
+              "response": "129 KIAS"
+            },
+            {
+              "text": "All Occupants",
+              "type": "Challenge",
+              "response": "SEATED WITH SEATBELTS SECURE"
+            },
+            {
+              "text": "If in range of landing site:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Expedite descent to FL230.",
+              "type": "Challenge"
+            },
+            {
+              "text": "If cabin altitude exceeds 14,000 ft and passenger masks do not automatically deploy:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "EMERG OXYGEN Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "IF TIME PERMITS",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Perform AIR START (3.6.2).",
+              "type": "Challenge"
+            },
+            {
+              "text": "IF TIME DOES NOT PERMIT",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Perform FORCED LANDING (3.8.1).",
+              "type": "Challenge"
+            }
+          ]
+        },
+        {
+          "name": "PARTIAL OR ERRATIC POWER LOSS",
+          "entries": [
+            {
+              "text": "IGNITER Switch",
+              "type": "MemoryItem",
+              "response": "ON"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "MemoryItem",
+              "response": "IDLE"
+            },
+            {
+              "text": "MAN OVRD Lever",
+              "type": "MemoryItem",
+              "response": "DEPLOY AND ENGAGE SLOWLY"
+            },
+            {
+              "text": "Land as soon as possible.",
+              "type": "Challenge"
+            },
+            {
+              "text": "After touchdown:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "MAN OVRD Lever",
+              "type": "Challenge",
+              "response": "FULL DOWN"
+            },
+            {
+              "text": "Brakes",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "DEPENDING ON AIRFIELD CONDITIONS, AND AIRPLANE WEIGHT AND CONFIGURATION, THE AVAILABLE POWER MAY NOT BE SUFFICIENT TO ENSURE A GO-AROUND.",
+              "type": "Warning"
+            },
+            {
+              "text": "TOTAL LANDING DISTANCE WILL BE INCREASED WITHOUT THE USE OF GROUND-FINE.",
+              "type": "Warning"
+            },
+            {
+              "text": "WHEN MAN OVRD LEVER IS IN OPERATION, DO NOT PERMIT NG TO FALL BELOW 75%, AVOID RAPID CONTROL MOVEMEMENTS, AND OBSERVE ENGINE LIMITATIONS.",
+              "type": "Caution"
+            }
+          ]
+        },
+        {
+          "name": "EMERGENCY DESCENT",
+          "entries": [
+            {
+              "text": "MAXIMUM RATE EMERGENCY DESCENT",
+              "type": "Section"
+            },
+            {
+              "text": "Autopilot",
+              "type": "Challenge",
+              "response": "DISENGAGE"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "IDLE"
+            },
+            {
+              "text": "PROP Lever",
+              "type": "Challenge",
+              "response": "MAX RPM"
+            },
+            {
+              "text": "Pitch",
+              "type": "Challenge",
+              "response": "10° TO 20° NOSE DOWN"
+            },
+            {
+              "text": "Airspeed",
+              "type": "Challenge",
+              "response": "MMO/VMO"
+            },
+            {
+              "text": "IF SIGNIFICANT TURBULENCE IS EXPECTED, OR IF SUSPECTED STRUCTURAL PROBLEM, DO NOT DESCEND AT INDICATED AIRSPEEDS GREATER THAN VO.",
+              "type": "Caution"
+            },
+            {
+              "text": "MAXIMUM RANGE EMERGENCY DESCENT",
+              "type": "Section"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "IDLE"
+            },
+            {
+              "text": "PROP Lever",
+              "type": "Challenge",
+              "response": "FEATHER"
+            },
+            {
+              "text": "Flaps",
+              "type": "Challenge",
+              "response": "UP"
+            },
+            {
+              "text": "Landing Gear",
+              "type": "Challenge",
+              "response": "UP"
+            },
+            {
+              "text": "Best Glide Airspeed",
+              "type": "Challenge",
+              "response": "129 KIAS"
+            }
+          ]
+        },
+        {
+          "name": "AIR START",
+          "entries": [
+            {
+              "text": "AIR START",
+              "type": "Section"
+            },
+            {
+              "text": "Verify within Air Start Envelope.",
+              "type": "Challenge"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "IDLE"
+            },
+            {
+              "text": "PROP Lever",
+              "type": "Challenge",
+              "response": "FEATHER"
+            },
+            {
+              "text": "COND Lever",
+              "type": "Challenge",
+              "response": "FUEL CUTOFF"
+            },
+            {
+              "text": "DE-ICE BOOTS Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "PROP HEAT Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "PITOT STALL HT Switch",
+              "type": "Challenge",
+              "response": "OFF UNLESS REQUIRED"
+            },
+            {
+              "text": "PRESS AIR Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "FUEL AUTO SEL Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "STBY ALTN Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "BATT 1 & BATT 2 Switches",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "L & R FUEL PUMP Switches",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "FUEL TANK SELECTOR Knob",
+              "type": "Challenge",
+              "response": "TANK WITH POSITIVE FUEL PRESSURE"
+            },
+            {
+              "text": "IGNITER Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "STARTER GEN Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "START Switch",
+              "type": "Challenge",
+              "response": "PRESS & RELEASE"
+            },
+            {
+              "text": "Oil Pressure",
+              "type": "Challenge",
+              "response": "RISING"
+            },
+            {
+              "text": "NG",
+              "type": "Challenge",
+              "response": "12% MINIMUM"
+            },
+            {
+              "text": "COND Lever",
+              "type": "Challenge",
+              "response": "LOW"
+            },
+            {
+              "text": "ITT and NG",
+              "type": "Challenge",
+              "response": "MONITOR"
+            },
+            {
+              "text": "IF AIR START FAILS",
+              "type": "Subtitle"
+            },
+            {
+              "text": "COND Lever",
+              "type": "Challenge",
+              "response": "FUEL CUTOFF"
+            },
+            {
+              "text": "STARTER GEN Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "IGNITER Switch",
+              "type": "Challenge",
+              "response": "AUTO"
+            },
+            {
+              "text": "L & R FUEL PUMP Switches",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "Best Glide Airspeed",
+              "type": "Challenge",
+              "response": "129 KIAS"
+            },
+            {
+              "text": "Proceed to nearest landing area.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Perform FORCED LANDING (3.8.1).",
+              "type": "Challenge"
+            },
+            {
+              "text": "IF ENGINE RELIGHTS AND AFTER NG GREATER THAN 51%",
+              "type": "Subtitle"
+            },
+            {
+              "text": "GEN AMP Indicator",
+              "type": "Challenge",
+              "response": "VERIFY POSITIVE"
+            },
+            {
+              "text": "Engine Instruments",
+              "type": "Challenge",
+              "response": "CHECK"
+            },
+            {
+              "text": "COND Lever",
+              "type": "Challenge",
+              "response": "HIGH"
+            },
+            {
+              "text": "PROP Lever",
+              "type": "Challenge",
+              "response": "MAX RPM"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "IGNITER Switch",
+              "type": "Challenge",
+              "response": "AUTO"
+            },
+            {
+              "text": "STBY ALTN Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "PRESS AIR Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "PITOT STALL HT Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "PROP HEAT Switch",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "DE-ICE BOOTS Switch",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "Cabin Altitude",
+              "type": "Challenge",
+              "response": "MONITOR"
+            },
+            {
+              "text": "Land as soon as practical.",
+              "type": "Challenge"
+            },
+            {
+              "text": "DO NOT ATTEMPT MORE THAN ONE AIR START. REPEATED ATTEMPTS COULD DISCHARGE THE BATTERIES TO LEVELS THAT WOULD NOT SUPPORT ESSENTIAL ELECTRICAL SERVICES.",
+              "type": "Warning"
+            },
+            {
+              "text": "AFTER AN AIR START, THE AUTOMATIC FUEL SELECTOR HAS BEEN DISABLED, AND THE FUEL SELECTOR MUST BE MANAGED MANUALLY.",
+              "type": "Caution"
+            }
+          ]
+        },
+        {
+          "name": "FIRE, SMOKE, OR FUMES",
+          "entries": [
+            {
+              "text": "ENGINE OR COCKPIT/CABIN FIRE DURING START OR ON THE GROUND",
+              "type": "Section"
+            },
+            {
+              "text": "Airplane",
+              "type": "MemoryItem",
+              "response": "STOP"
+            },
+            {
+              "text": "COND Lever",
+              "type": "MemoryItem",
+              "response": "FUEL CUTOFF"
+            },
+            {
+              "text": "FUEL TANK SELECTOR Knob",
+              "type": "MemoryItem",
+              "response": "OFF"
+            },
+            {
+              "text": "BATT 1 & BATT 2 Switches",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "Airplane",
+              "type": "Challenge",
+              "response": "EVACUATE"
+            },
+            {
+              "text": "Fire",
+              "type": "Challenge",
+              "response": "EXTINGUISH"
+            },
+            {
+              "text": "ENGINE FIRE IN FLIGHT",
+              "type": "Section"
+            },
+            {
+              "text": "COND Lever",
+              "type": "MemoryItem",
+              "response": "FUEL CUTOFF"
+            },
+            {
+              "text": "PROP Lever",
+              "type": "MemoryItem",
+              "response": "FEATHER"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "MemoryItem",
+              "response": "IDLE"
+            },
+            {
+              "text": "FUEL TANK SELECTOR Knob",
+              "type": "MemoryItem",
+              "response": "OFF"
+            },
+            {
+              "text": "Crew Oxygen Masks (above 14,000 ft)",
+              "type": "MemoryItem",
+              "response": "DON"
+            },
+            {
+              "text": "MASK MICS Switch",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "Initiate MAXIMUM RATE EMERGENCY DESCENT (3.5.2)",
+              "type": "Challenge"
+            },
+            {
+              "text": "PRESS AIR Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "L & R FUEL PUMP Switches",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "If fire is extinguished:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Best Glide Airspeed",
+              "type": "Challenge",
+              "response": "129 KIAS"
+            },
+            {
+              "text": "AFTER AN ENGINE FIRE IN FLIGHT, DO NOT ATTEMPT AN AIR START.",
+              "type": "Warning"
+            },
+            {
+              "text": "If smoke evacuation is required:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Oxygen Mask Regulator",
+              "type": "Challenge",
+              "response": "EMGCY"
+            },
+            {
+              "text": "EMERG OXYGEN Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "DUMP VALVE Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "DOOR SEAL Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "GROUND FRESH AIR Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "If cabin altitude exceeds 14,000 ft and passenger masks do not automatically deploy:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "EMERG OXYGEN Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "Perform FORCED LANDING (3.8.1)",
+              "type": "Challenge"
+            }
+          ]
+        },
+        {
+          "name": "FIRE, SMOKE, OR FUMES (CONTINUED)",
+          "entries": [
+            {
+              "text": "COCKPIT/CABIN ELECTRICAL FIRE IN FLIGHT",
+              "type": "Section"
+            },
+            {
+              "text": "Crew Oxygen Masks",
+              "type": "MemoryItem",
+              "response": "DON"
+            },
+            {
+              "text": "Oxygen Mask Regulator",
+              "type": "MemoryItem",
+              "response": "EMGCY"
+            },
+            {
+              "text": "MASK MICS Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "EMERG OXYGEN Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "DUMP VALVE Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "STBY ALTN Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "STARTER GEN Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "BATT 1 & BATT 2 Switches",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "Fly by reference to Standby Instrument.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Fire Extinguisher",
+              "type": "Challenge",
+              "response": "USE AS REQUIRED"
+            },
+            {
+              "text": "IF FIRE NOT EXTINGUISHED",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Initiate MAXIMUM RATE EMERGENCY DESCENT (3.5.2).",
+              "type": "Challenge"
+            },
+            {
+              "text": "Perform FORCED LANDING (3.8.1).",
+              "type": "Challenge"
+            },
+            {
+              "text": "IF FIRE IS EXTINGUISHED",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Initiate descent to 10,000 ft or minimum safe altitude (if higher).",
+              "type": "Challenge"
+            },
+            {
+              "text": "If smoke or fumes are present or essential electrical equipment is required:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "X-TIE Circuit Breaker (L T ╠2►)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "BATT 1 Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "If smoke and/or fumes are present:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "HI PRESS AIR Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "DOOR SEAL Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "If smokes/fumes return:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "BATT 1 Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "Land as soon as possible.",
+              "type": "Challenge"
+            },
+            {
+              "text": "COCKPIT/CABIN NON-ELECTRICAL FIRE IN FLIGHT",
+              "type": "Section"
+            },
+            {
+              "text": "Crew Oxygen Masks",
+              "type": "MemoryItem",
+              "response": "DON"
+            },
+            {
+              "text": "Oxygen Mask Regulator",
+              "type": "MemoryItem",
+              "response": "EMGCY"
+            },
+            {
+              "text": "MASK MICS Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "EMERG OXYGEN Switch",
+              "type": "Challenge",
+              "response": "ON (if oxygen available)"
+            },
+            {
+              "text": "Fire Extinguisher",
+              "type": "Challenge",
+              "response": "USE AS REQUIRED"
+            },
+            {
+              "text": "IF FIRE NOT EXTINGUISHED:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Initiate MAXIMUM RATE EMERGENCY DESCENT (3.5.2).",
+              "type": "Challenge"
+            },
+            {
+              "text": "Perform FORCED LANDING (3.8.1).",
+              "type": "Challenge"
+            },
+            {
+              "text": "IF FIRE IS EXTINGUISHED:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Initiate descent to 10,000 ft or minimum safe altitude (if higher).",
+              "type": "Challenge"
+            },
+            {
+              "text": "Climate Fan Control",
+              "type": "Challenge",
+              "response": "OFF (counterclockwise)"
+            },
+            {
+              "text": "DUMP VALVE Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "HI PRESS AIR Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "DOOR SEAL Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "If smoke/fumes are coming from pressurization air:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "PRESS AIR Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "GROUND FRESH AIR Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "Land as soon as possible.",
+              "type": "Challenge"
+            },
+            {
+              "text": "COCKPIT/CABIN SMOKE EVACUATION",
+              "type": "Section"
+            },
+            {
+              "text": "Crew Oxygen Masks",
+              "type": "MemoryItem",
+              "response": "DON"
+            },
+            {
+              "text": "Oxygen Mask Regulator",
+              "type": "MemoryItem",
+              "response": "EMGCY"
+            },
+            {
+              "text": "MASK MICS Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "EMERG OXYGEN Switch",
+              "type": "Challenge",
+              "response": "ON (if oxygen available)"
+            },
+            {
+              "text": "DEFROST Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "Climate Fan Control",
+              "type": "Challenge",
+              "response": "OFF (counterclockwise)"
+            },
+            {
+              "text": "DUMP VALVE Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "HI PRESS AIR Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "DOOR SEAL Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "If smoke/fumes are coming from pressurization air:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "PRESS AIR Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "GROUND FRESH AIR Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "USE OF DEFROST TOGETHER WITH EMERG PRESS IS PROHIBITED.",
+              "type": "Caution"
+            }
+          ]
+        },
+        {
+          "name": "EMERGENCY LANDINGS",
+          "entries": [
+            {
+              "text": "FORCED LANDING",
+              "type": "Section"
+            },
+            {
+              "text": "Seat Backs",
+              "type": "Challenge",
+              "response": "UPRIGHT"
+            },
+            {
+              "text": "Seat Belts",
+              "type": "Challenge",
+              "response": "SECURE"
+            },
+            {
+              "text": "Passengers",
+              "type": "Challenge",
+              "response": "BRIEF"
+            },
+            {
+              "text": "ELT",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "Before touchdown:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "COND Lever",
+              "type": "Challenge",
+              "response": "FUEL CUTOFF"
+            },
+            {
+              "text": "FUEL TANK SELECTOR Knob",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "DUMP VALVE Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "Flaps",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "Emergency Gear Extension System",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "Landing Airspeed (Normal Mode)",
+              "type": "Challenge",
+              "response": "FLAPS UP: 110 KIAS, FLAPS T/O: 105 KIAS, FLAPS FULL: 95 KIAS"
+            },
+            {
+              "text": "BATT 1 & BATT 2 Switches",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "After the airplane has stopped:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Airplane",
+              "type": "Challenge",
+              "response": "EVACUATE AS REQUIRED"
+            },
+            {
+              "text": "LANDING WITH GEAR UP",
+              "type": "Section"
+            },
+            {
+              "text": "If able, have ground personnel visually verify gear position.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Passengers",
+              "type": "Challenge",
+              "response": "BRIEF"
+            },
+            {
+              "text": "Flaps",
+              "type": "Challenge",
+              "response": "FULL"
+            },
+            {
+              "text": "Approach Speed (Normal Mode)",
+              "type": "Challenge",
+              "response": "95 KIAS"
+            },
+            {
+              "text": "When runway is assured:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "IDLE"
+            },
+            {
+              "text": "PROP Lever",
+              "type": "Challenge",
+              "response": "FEATHER"
+            },
+            {
+              "text": "COND Lever",
+              "type": "Challenge",
+              "response": "FUEL CUTOFF"
+            },
+            {
+              "text": "FUEL TANK SELECTOR Knob",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "BATT 1 & BATT 2 Switches",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "After the airplane has stopped:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Airplane",
+              "type": "Challenge",
+              "response": "EVACUATE AS REQUIRED"
+            },
+            {
+              "text": "LANDING WITHOUT ELEVATOR CONTROL",
+              "type": "Section"
+            },
+            {
+              "text": "Passengers",
+              "type": "Challenge",
+              "response": "BRIEF"
+            },
+            {
+              "text": "Landing Gear",
+              "type": "Challenge",
+              "response": "DOWN"
+            },
+            {
+              "text": "Flaps",
+              "type": "Challenge",
+              "response": "T/O"
+            },
+            {
+              "text": "Airspeed",
+              "type": "Challenge",
+              "response": "120 KIAS"
+            },
+            {
+              "text": "Power",
+              "type": "Challenge",
+              "response": "AS REQUIRED TO MAINTAIN SPEED AND 300 TO 500 FPM DESCENT"
+            },
+            {
+              "text": "Elevator",
+              "type": "Challenge",
+              "response": "ADJUST USING PITCH TRIM"
+            },
+            {
+              "text": "Land in nose-high attitude.",
+              "type": "Challenge"
+            },
+            {
+              "text": "DITCHING",
+              "type": "Section"
+            },
+            {
+              "text": "Passengers",
+              "type": "Challenge",
+              "response": "BRIEF"
+            },
+            {
+              "text": "Landing Gear",
+              "type": "Challenge",
+              "response": "UP"
+            },
+            {
+              "text": "Flaps",
+              "type": "Challenge",
+              "response": "FULL"
+            },
+            {
+              "text": "Approach Speed (Normal Mode)",
+              "type": "Challenge",
+              "response": "95 KIAS"
+            },
+            {
+              "text": "DUMP VALVE Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "PRESS AIR Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "IDLE"
+            },
+            {
+              "text": "PROP Lever",
+              "type": "Challenge",
+              "response": "FEATHER"
+            },
+            {
+              "text": "COND Lever",
+              "type": "Challenge",
+              "response": "FUEL CUTOFF"
+            },
+            {
+              "text": "FUEL TANK SELECTOR Knob",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "BATT 1 & BATT 2 Switches",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "Ditch with low rate of descent.",
+              "type": "Challenge"
+            },
+            {
+              "text": "IN HEAVY SWELL WITH LIGHT WIND, LAND PARALLEL TO THE SWELL.",
+              "type": "Caution"
+            },
+            {
+              "text": "IN HEAVY WIND, LAND INTO THE WIND, TOUCHING DOWN AT THE TOP OF OR ON THE BACKSIDE OF A SWELL, IF POSSIBLE.",
+              "type": "Caution"
+            },
+            {
+              "text": "After ditching:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Airplane",
+              "type": "Challenge",
+              "response": "EVACUATE VIA EMERGENCY EXIT"
+            }
+          ]
+        },
+        {
+          "name": "STALL PREVENTION SYSTEM",
+          "entries": [
+            {
+              "text": "ERRONEOUS PUSHER/SHAKER OPERATION",
+              "type": "Section"
+            },
+            {
+              "text": "Control Yoke",
+              "type": "MemoryItem",
+              "response": "GRASP AND MAINTAIN CONTROL"
+            },
+            {
+              "text": "AP/TRIM DISC Switch",
+              "type": "MemoryItem",
+              "response": "PRESS & HOLD"
+            },
+            {
+              "text": "Pitch",
+              "type": "MemoryItem",
+              "response": "SMOOTHLY TO LEVEL FLIGHT"
+            },
+            {
+              "text": "PUSHER Circuit Breaker (L B◄1╣)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "AP/TRIM DISC Switch",
+              "type": "Challenge",
+              "response": "RELEASE"
+            },
+            {
+              "text": "TRIM RESET Switch",
+              "type": "Challenge",
+              "response": "PRESS & RELEASE"
+            },
+            {
+              "text": "If the shaker is active and the AoA indicator is in the red arc (greater than 0.8):",
+              "type": "Subtitle"
+            },
+            {
+              "text": "SPS CMP 1A Circuit Breaker (L T◄6╣)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "SPS CMP 1B Circuit Breaker (L B◄10╣)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "If the shaker is still active:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "SPS CMP 2A Circuit Breaker (L T◄5╣)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "SPS CMP 2B Circuit Breaker (L B◄9╣)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "If the shaker is active and the AoA indicator is NOT in the red arc (less than 0.8):",
+              "type": "Subtitle"
+            },
+            {
+              "text": "SPS CMP 2A Circuit Breaker (L T◄5╣)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "SPS CMP 2B Circuit Breaker (L B◄9╣)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "If the shaker is still active:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "SPS CMP 1A Circuit Breaker (L T◄6╣)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "SPS CMP 1B Circuit Breaker (L B◄10╣)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "WITH THE STALL PREVENTION SYSTEM INOPERATIVE, DO NOT DECELERATE BELOW THE AIRSPEEDS IN THE MINIMUM SPEEDS TABLE.",
+              "type": "Warning"
+            },
+            {
+              "text": "DISABLING BOTH SPS COMPUTERS WILL CAUSE PUSHER ICE MODE TO BE DISPLAYED, AND WHEN ICE PROTECTION SYSTEMS ARE OFF, AN ADDITIONAL ICE MODE FAIL CAUTION WILL BE DISPLAYED.",
+              "type": "Caution"
+            },
+            {
+              "text": "ERRONEOUS PUSHER/SHAKER DURING LANDING FLARE",
+              "type": "Section"
+            },
+            {
+              "text": "AP/TRIM DISC Switch",
+              "type": "MemoryItem",
+              "response": "PRESS AND HOLD"
+            },
+            {
+              "text": "Land or go-around.",
+              "type": "MemoryItem"
+            },
+            {
+              "text": "If going around, and after shaker deactivates:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "AP/TRIM DISC Switch",
+              "type": "Challenge",
+              "response": "RELEASE"
+            },
+            {
+              "text": "TRIM RESET",
+              "type": "Challenge",
+              "response": "PRESS AND RELEASE"
+            },
+            {
+              "text": "PUSHER ICE MODE Alert",
+              "type": "Challenge",
+              "response": "CHECK"
+            },
+            {
+              "text": "PUSHER SERVO BINDING",
+              "type": "Section"
+            },
+            {
+              "text": "Control Yoke",
+              "type": "MemoryItem",
+              "response": "GRASP AND MAINTAIN CONTROL"
+            },
+            {
+              "text": "AP/TRIM DISC Switch",
+              "type": "MemoryItem",
+              "response": "PRESS AND HOLD"
+            },
+            {
+              "text": "PUSHER Circuit Breaker (L B◄1╣)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "AP/TRIM DISC Switch",
+              "type": "Challenge",
+              "response": "RELEASE"
+            },
+            {
+              "text": "TRIM RESET Switch",
+              "type": "Challenge",
+              "response": "PRESS AND RELEASE"
+            },
+            {
+              "text": "Trim",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "WITH THE STALL PREVENTION SYSTEM INOPERATIVE, DO NOT DECELERATE BELOW THE AIRSPEEDS IN THE MINIMUM SPEEDS TABLE.",
+              "type": "Warning"
+            }
+          ]
+        },
+        {
+          "name": "AUTOPILOT AND ELECTRIC TRIM",
+          "entries": [
+            {
+              "text": "AUTOPILOT MALFUNCTION",
+              "type": "Section"
+            },
+            {
+              "text": "Control Yoke",
+              "type": "MemoryItem",
+              "response": "GRASP AND MAINTAIN CONTROL"
+            },
+            {
+              "text": "AP/TRIM DISC Switch",
+              "type": "MemoryItem",
+              "response": "PRESS & HOLD"
+            },
+            {
+              "text": "HOLD THE CONTROL YOKE FIRMLY. UP TO 50 POUNDS OF FORCE ON THE CONTROL YOKE MAY BE REQUIRED TO MAINTAIN LEVEL FLIGHT.",
+              "type": "Caution"
+            },
+            {
+              "text": "Airspeed",
+              "type": "Challenge",
+              "response": "ADJUST TO RELIEVE FORCES"
+            },
+            {
+              "text": "AUTOPILOT Circuit Breaker (L B ╠2►)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "AP/TRIM DISC Switch",
+              "type": "Challenge",
+              "response": "RELEASE"
+            },
+            {
+              "text": "TRIM RESET Switch",
+              "type": "Challenge",
+              "response": "PRESS & RELEASE"
+            },
+            {
+              "text": "Trim",
+              "type": "Challenge",
+              "response": "ADJUST AS NECESSARY"
+            },
+            {
+              "text": "Notify ATC of loss of RVSM capability.",
+              "type": "Challenge"
+            },
+            {
+              "text": "YAW DAMPER MALFUNCTION",
+              "type": "Section"
+            },
+            {
+              "text": "Yaw Damper",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "If yaw damper is still controlling the airplane:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "AUTOPILOT Circuit Breaker (L B ╠2►)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "Rudder Trim",
+              "type": "Challenge",
+              "response": "ADJUST AS NECESSARY"
+            },
+            {
+              "text": "TRIM MALFUNCTION",
+              "type": "Section"
+            },
+            {
+              "text": "Control Yoke",
+              "type": "MemoryItem",
+              "response": "GRASP AND MAINTAIN CONTROL"
+            },
+            {
+              "text": "AP/TRIM DISC Switch",
+              "type": "MemoryItem",
+              "response": "PRESS AND HOLD"
+            },
+            {
+              "text": "HOLD THE CONTROL YOKE FIRMLY. SIGNIFICANT FORCE ON THE CONTROL YOKE MAY BE REQUIRED.",
+              "type": "Caution"
+            },
+            {
+              "text": "TRIM DISC Caution",
+              "type": "Challenge",
+              "response": "DISPLAYED"
+            },
+            {
+              "text": "AP/TRIM DISC Switch",
+              "type": "Challenge",
+              "response": "RELEASE"
+            },
+            {
+              "text": "If elevator trim malfunction or still in motion:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "ELEV TRIM Circuit Breaker (R T ╠3►)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "If rudder trim malfunction or still in motion:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "RUD TRIM Circuit Breaker (R T ╠5►)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "If aileron trim malfunction or still in motion:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "AIL TRIM Circuit Breaker (R T ╠4►)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "TRIM RESET Switch",
+              "type": "Challenge",
+              "response": "PRESS AND RELEASE"
+            },
+            {
+              "text": "Airspeed",
+              "type": "Challenge",
+              "response": "ADJUST TO RELIEVE FORCES"
+            }
+          ]
+        },
+        {
+          "name": "ELECTRICAL",
+          "entries": [
+            {
+              "text": "TOTAL LOSS OF ELECTRICAL POWER",
+              "type": "Section"
+            },
+            {
+              "text": "Crew Oxygen Masks (above 14,000 ft)",
+              "type": "MemoryItem",
+              "response": "DON"
+            },
+            {
+              "text": "Standby Instrument",
+              "type": "Challenge",
+              "response": "REFERENCE"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "SET BY REFERENCE TO ATTITUDE AND AIRSPEED"
+            },
+            {
+              "text": "WHEN FULLY CHARGED, THE INTERNAL BATTERY IN THE STANDBY INSTRUMENT WILL PROVIDE POWER FOR AT LEAST 60 MINUTES IF AIRPLANE POWER IS LOST.",
+              "type": "Caution"
+            },
+            {
+              "text": "Land as soon as possible.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Landing Gear will not extend normally, plan for extending landing gear using Emergency Landing Gear Extension.",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Airspeed",
+              "type": "Challenge",
+              "response": "BELOW 150 KIAS"
+            },
+            {
+              "text": "Emergency Gear Extension Handle",
+              "type": "Challenge",
+              "response": "ACTIVATE"
+            },
+            {
+              "text": "Flaps will not extend or retract, plan on landing with flaps in current position.",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Approach Speeds (Normal Mode)",
+              "type": "Challenge",
+              "response": "FLAPS UP: 115 KIAS, FLAPS T/O: 110 KIAS, FLAPS FULL: 95 KIAS"
+            },
+            {
+              "text": "IF LANDING WITH ICE ACCRETIONS ON THE AIRPLANE FINAL APPROACH AIRSPEEDS ARE 122 - 133 KIAS FLAPS UP AND 119 - 130 KIAS FLAPS T/O.",
+              "type": "Caution"
+            },
+            {
+              "text": "IF LANDING WITH FLAPS UP, ALLOW FOR LANDING DISTANCE INCREASE OF UP TO 65% MORE THAN FLAPS FULL.",
+              "type": "Caution"
+            }
+          ]
+        },
+        {
+          "name": "AVIONICS",
+          "entries": [
+            {
+              "text": "PFD/MFD FAILURE",
+              "type": "Section"
+            },
+            {
+              "text": "LEFT PFD FAILURE",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Standby Instrument or Copilot's PFD",
+              "type": "Challenge",
+              "response": "REFERENCE"
+            },
+            {
+              "text": "DISPLAY BACKUP Switch",
+              "type": "Challenge",
+              "response": "PRESS AS DESIRED"
+            },
+            {
+              "text": "Land as soon as practical.",
+              "type": "Challenge"
+            },
+            {
+              "text": "RIGHT PFD FAILURE",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Standby Instrument or Pilot's PFD",
+              "type": "Challenge",
+              "response": "REFERENCE"
+            },
+            {
+              "text": "DISPLAY BACKUP Switch",
+              "type": "Challenge",
+              "response": "PRESS AS DESIRED"
+            },
+            {
+              "text": "Land as soon as practical.",
+              "type": "Challenge"
+            },
+            {
+              "text": "MFD FAILURE",
+              "type": "Subtitle"
+            },
+            {
+              "text": "DISPLAY BACKUP Switch",
+              "type": "Challenge",
+              "response": "PRESS"
+            },
+            {
+              "text": "Land as soon as practical.",
+              "type": "Challenge"
+            },
+            {
+              "text": "AIR DATA AND ATTITUDE HEADING REFERENCE SYSTEM (ADAHRS) FAILURE",
+              "type": "Section"
+            },
+            {
+              "text": "PFD SENSOR Softkey",
+              "type": "Challenge",
+              "response": "SELECT WORKING ADC or AHRS"
+            },
+            {
+              "text": "Standby Instrument",
+              "type": "Challenge",
+              "response": "CROSS-CHECK AND MONITOR"
+            },
+            {
+              "text": "Notify ATC of loss of RVSM capability.",
+              "type": "Challenge"
+            },
+            {
+              "text": "AIRSPEED INDICATING SYSTEM FAILURE",
+              "type": "Section"
+            },
+            {
+              "text": "PITOT STALL HT Switch",
+              "type": "Challenge",
+              "response": "CHECK ON"
+            },
+            {
+              "text": "Refer to working airspeed indicating system (other PFD and/or standby instrument).",
+              "type": "Challenge"
+            },
+            {
+              "text": "PFD SENSOR Softkey",
+              "type": "Challenge",
+              "response": "SELECT WORKING ADC"
+            },
+            {
+              "text": "Notify ATC of loss of RVSM capability.",
+              "type": "Challenge"
+            },
+            {
+              "text": "If all airspeed indicating systems have failed and symptoms persist:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Perform a precautionary landing, flying by reference to attitude, altitude, and power instruments.",
+              "type": "Challenge"
+            },
+            {
+              "text": "ALTITUDE INDICATING SYSTEM FAILURE",
+              "type": "Section"
+            },
+            {
+              "text": "Refer to working altitude indicating system (other PFD and/or standby instrument).",
+              "type": "Challenge"
+            },
+            {
+              "text": "PFD SENSOR Softkey",
+              "type": "Challenge",
+              "response": "SELECT WORKING ADC"
+            },
+            {
+              "text": "Notify ATC of loss of RVSM capability.",
+              "type": "Challenge"
+            },
+            {
+              "text": "If all altitude indicating systems have failed and symptoms persist:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Refer to GNSS altitude (MFD Map TAWS-B Page).",
+              "type": "Challenge"
+            },
+            {
+              "text": "Land as soon as practical.",
+              "type": "Challenge"
+            },
+            {
+              "text": "AUTOPILOT UNABLE TO MAINTAIN ASSIGNED FLIGHT LEVEL ±65 FEET DURING RVSM OPERATIONS",
+              "type": "Section"
+            },
+            {
+              "text": "Disengage the autopilot.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Ascend/descend to assigned flight level.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Re-engage the autopilot.",
+              "type": "Challenge"
+            },
+            {
+              "text": "If autopilot is unable to maintain assigned flight level ±65 feet:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Evaluate the ability to maintain altitude through manual control.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Notify ATC of the failure and await ATC instructions.",
+              "type": "Challenge"
+            }
+          ]
+        },
+        {
+          "name": "MISCELLANEOUS",
+          "entries": [
+            {
+              "text": "OXYGEN USE — FRONT SEATS",
+              "type": "Section"
+            },
+            {
+              "text": "IF TIME PERMITS, BEFORE USING OXYGEN, REMOVE ANY POTENTIALLY FLAMMABLE SUBSTANCES FROM YOUR FACE (OILS, GREASE, SOAP, LIPSTICK, MAKEUP, ETC.).",
+              "type": "Warning"
+            },
+            {
+              "text": "Oxygen Mask",
+              "type": "Challenge",
+              "response": "DON"
+            },
+            {
+              "text": "MASK MICS Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "Oxygen Flow",
+              "type": "Challenge",
+              "response": "CHECK"
+            },
+            {
+              "text": "IF SMOKE IN COCKPIT:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Oxygen Mask Regulator",
+              "type": "Challenge",
+              "response": "EMGCY"
+            },
+            {
+              "text": "IF NO SMOKE IN COCKPIT",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Oxygen Mask Regulator",
+              "type": "Challenge",
+              "response": "NORMAL (100% if required)"
+            },
+            {
+              "text": "CRACKED OR DELAMINATED WINDSHIELD OR WINDOW IN FLIGHT",
+              "type": "Section"
+            },
+            {
+              "text": "Crew Oxygen Masks (above 14,000 ft)",
+              "type": "MemoryItem",
+              "response": "DON"
+            },
+            {
+              "text": "MASK MICS Switch",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "WINDSH HEAT",
+              "type": "Challenge",
+              "response": "OFF (if not required)"
+            },
+            {
+              "text": "All Occupants",
+              "type": "Challenge",
+              "response": "SEATED WITH SEATBELTS SECURE"
+            },
+            {
+              "text": "Airspeed",
+              "type": "Challenge",
+              "response": "REDUCE TO MINIMUM PRACTICAL"
+            },
+            {
+              "text": "Landing Field Elevation",
+              "type": "Challenge",
+              "response": "SET TO 10,000 ft"
+            },
+            {
+              "text": "Descend to 10,000 ft or minimum safe altitude (if higher).",
+              "type": "Challenge"
+            },
+            {
+              "text": "Land as soon as practical.",
+              "type": "Challenge"
+            }
+          ]
+        },
+        {
+          "name": "EXITING SEVERE ICING OR SLD CONDITIONS",
+          "entries": [
+            {
+              "text": "Exit the area immediately by changing altitude and/or course.",
+              "type": "Challenge"
+            },
+            {
+              "text": "If autopilot is engaged:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Control Yoke",
+              "type": "Challenge",
+              "response": "GRASP AND MAINTAIN CONTROL"
+            },
+            {
+              "text": "AP/TRIM DISC Switch",
+              "type": "Challenge",
+              "response": "PRESS & HOLD"
+            },
+            {
+              "text": "Do not re-engage the autopilot until the airframe is clear of ice.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Avoid abrupt and excessive maneuvering.",
+              "type": "Challenge"
+            },
+            {
+              "text": "If an unusual roll response or uncommanded control movement is observed, reduce angle of attack by increasing airspeed and/or rolling wings level (if in a turn), and apply additional power, if needed.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Avoid extending flaps during extended operations in icing conditions to reduce the possibility of ice forming on the upper surface of the wing further aft than normal.",
+              "type": "Challenge"
+            },
+            {
+              "text": "If flaps are extended, do not retract them until the airframe is clear of ice.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Report these weather conditions to Air Traffic Control.",
+              "type": "Challenge"
+            }
+          ]
+        },
+        {
+          "name": "WARNING (RED) CAS MESSAGES — IN FLIGHT",
+          "entries": [
+            {
+              "text": "AUTO DESCENT",
+              "type": "Section"
+            },
+            {
+              "text": "To acknowledge and silence EDM alert:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "PFD ALERT Softkey",
+              "type": "Challenge",
+              "response": "PRESS AND RELEASE"
+            },
+            {
+              "text": "To cancel auto-descent:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "AP/TRIM DISC Switch",
+              "type": "Challenge",
+              "response": "PRESS AND RELEASE"
+            },
+            {
+              "text": "CABIN ALT HIGH",
+              "type": "Section"
+            },
+            {
+              "text": "Crew Oxygen Masks (above 14,000 ft)",
+              "type": "MemoryItem",
+              "response": "DON"
+            },
+            {
+              "text": "MASK MICS Switch",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "Reduce power and immediately begin a descent to 10,000 ft or minimum safe altitude (if higher).",
+              "type": "Challenge"
+            },
+            {
+              "text": "If cabin altitude is rising rapidly accelerate to VMO/MMO to maximize descent rate.",
+              "type": "Challenge"
+            },
+            {
+              "text": "IF SIGNIFICANT TURBULENCE IS EXPECTED, OR IF SUSPECTED STRUCTURAL PROBLEM, DO NOT DESCEND AT INDICATED AIRSPEEDS GREATER THAN VO.",
+              "type": "Caution"
+            },
+            {
+              "text": "If cabin altitude exceeds 14,000 ft:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "EMERG OXYGEN Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "DOOR SEAL Switch",
+              "type": "Challenge",
+              "response": "CHECK ON"
+            },
+            {
+              "text": "PRESS AIR Switch",
+              "type": "Challenge",
+              "response": "CHECK ON"
+            },
+            {
+              "text": "DUMP VALVE Switch",
+              "type": "Challenge",
+              "response": "CHECK OFF"
+            },
+            {
+              "text": "HI PRESS AIR Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "CABIN Indicator",
+              "type": "Challenge",
+              "response": "CHECK"
+            },
+            {
+              "text": "If cabin altitude remains at or above 10,000 ft:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "PRESS CTRL 1 Circuit Breaker (L B ◄3╣)",
+              "type": "Challenge",
+              "response": "CHECK, RESET ONE TIME IF OPEN"
+            },
+            {
+              "text": "PRESS CTRL 2 Circuit Breaker (R T ◄1╣)",
+              "type": "Challenge",
+              "response": "CHECK, RESET ONE TIME IF OPEN"
+            },
+            {
+              "text": "MASS FLOW Circuit Breaker (R T ◄5╣)",
+              "type": "Challenge",
+              "response": "CHECK, RESET ONE TIME IF OPEN"
+            },
+            {
+              "text": "If cabin altitude remains at or above 10,000 ft:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "DEFROST Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "EMERG PRESS Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "HI PRESS AIR Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "PRESS AIR Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "EMERG PRESS Circuit Breaker (R T ◄2╣)",
+              "type": "Challenge",
+              "response": "CHECK, RESET ONE TIME IF OPEN"
+            },
+            {
+              "text": "USE OF DEFROST TOGETHER WITH EMERG PRESS IS PROHIBITED",
+              "type": "Caution"
+            },
+            {
+              "text": "CHECK GEAR",
+              "type": "Section"
+            },
+            {
+              "text": "IF UNDER 500 FT AGL:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Airplane",
+              "type": "MemoryItem",
+              "response": "GO AROUND"
+            },
+            {
+              "text": "IF OVER 500 FT AGL:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "LANDING GEAR Control",
+              "type": "Challenge",
+              "response": "DOWN"
+            },
+            {
+              "text": "If CHECK GEAR Warning persists:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Airplane",
+              "type": "Challenge",
+              "response": "GO AROUND"
+            },
+            {
+              "text": "Perform LANDING GEAR FAILS TO EXTEND (3A.4.2).",
+              "type": "Challenge"
+            },
+            {
+              "text": "DE-ICE FAIL",
+              "type": "Section"
+            },
+            {
+              "text": "POWER",
+              "type": "Challenge",
+              "response": "VERIFY POWER IS ABOVE DE-ICE BOOTS TORQUE LIMITATION: UP TO 10,000 ft: 15% TRQ, ABOVE 10,000 ft: 35% TRQ"
+            },
+            {
+              "text": "DE-ICE BOOTS Switch",
+              "type": "Challenge",
+              "response": "OFF THEN ON"
+            },
+            {
+              "text": "If DE-ICE FAIL Warning persists or returns:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "DE-ICE BOOTS Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "PROP HEAT Switch",
+              "type": "Challenge",
+              "response": "VERIFY ON"
+            },
+            {
+              "text": "A LEAKING DE-ICE BOOTS SYSTEM MAY COMPROMISE THE LEADING EDGE OF THE WINGS OR HORIZONTAL STABILIZER. LEAVE THE PROP HEAT SWITCH ON TO REMAIN IN PUSHER ICE MODE AND LAND WITH THE FLAPS IN THE T/O POSITION.",
+              "type": "Caution"
+            },
+            {
+              "text": "Exit/avoid icing conditions.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Monitor oil temperature.",
+              "type": "Challenge"
+            },
+            {
+              "text": "If oil temperature exceeds 90°C and is rising:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Airspeed",
+              "type": "Challenge",
+              "response": "140 KIAS"
+            },
+            {
+              "text": "LANDING GEAR Control",
+              "type": "Challenge",
+              "response": "DOWN"
+            },
+            {
+              "text": "Approach Speeds (Pusher Ice Mode)",
+              "type": "Challenge",
+              "response": "Flaps UP: 122 – 133 KIAS, Flaps T/O: 119 – 130 KIAS"
+            },
+            {
+              "text": "DOOR UNLOCKED",
+              "type": "Section"
+            },
+            {
+              "text": "Crew Oxygen Masks (above 14,000 ft)",
+              "type": "MemoryItem",
+              "response": "DON"
+            },
+            {
+              "text": "MASK MICS Switch",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "DO NOT ADJUST THE POSITION OF DOOR HANDLES IN FLIGHT.",
+              "type": "Warning"
+            },
+            {
+              "text": "All Occupants",
+              "type": "Challenge",
+              "response": "SEATED WITH SEATBELTS SECURE"
+            },
+            {
+              "text": "Airspeed",
+              "type": "Challenge",
+              "response": "REDUCE TO MINIMUM PRACTICAL"
+            },
+            {
+              "text": "Descend to 10,000 ft or minimum safe altitude (if higher).",
+              "type": "Challenge"
+            },
+            {
+              "text": "Landing Field Elevation",
+              "type": "Challenge",
+              "response": "SET TO 10,000 ft"
+            },
+            {
+              "text": "Land as soon as possible.",
+              "type": "Challenge"
+            },
+            {
+              "text": "ENGINE CHIP",
+              "type": "Section"
+            },
+            {
+              "text": "Engine Instruments",
+              "type": "Challenge",
+              "response": "CHECK & MONITOR"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "REDUCE TO MINIMUM REQUIRED FOR SAFE FLIGHT"
+            },
+            {
+              "text": "Land as soon as possible.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Maintenance required.",
+              "type": "Challenge"
+            },
+            {
+              "text": "GEN FAIL",
+              "type": "Section"
+            },
+            {
+              "text": "STARTER GEN Switch",
+              "type": "Challenge",
+              "response": "VERIFY ON"
+            },
+            {
+              "text": "GEN AMP Indicator",
+              "type": "Challenge",
+              "response": "CHECK"
+            },
+            {
+              "text": "If generator amperage is zero or less:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "GEN RESET Switch",
+              "type": "Challenge",
+              "response": "PRESS & RELEASE"
+            },
+            {
+              "text": "If GEN FAIL Warning does not extinguish:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "STARTER GEN Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "ALTN AMP Indicator",
+              "type": "Challenge",
+              "response": "VERIFY POSITIVE"
+            },
+            {
+              "text": "Electrical Load",
+              "type": "Challenge",
+              "response": "MONITOR, MAXIMUM 41 AMPS"
+            },
+            {
+              "text": "Descend to FL190 or below.",
+              "type": "Challenge"
+            },
+            {
+              "text": "ITT HIGH",
+              "type": "Section"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "REDUCE BELOW 850°C AND ITT HIGH WARNING EXTINGUISHES OR MINIMUM POWER FOR SAFE FLIGHT"
+            },
+            {
+              "text": "If ITT HIGH Warning remains:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Land as soon as possible, using minimum power.",
+              "type": "Challenge"
+            },
+            {
+              "text": "HIGH ITT AT INTERMEDIATE POWER SETTINGS MAY BE AN EARLY INDICATION OF IMPENDING ENGINE FAILURE.",
+              "type": "Caution"
+            },
+            {
+              "text": "NG HIGH",
+              "type": "Section"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "REDUCE BELOW 104% AND NG HIGH WARNING EXTINGUISHES OR MINIMUM POWER FOR SAFE FLIGHT"
+            },
+            {
+              "text": "If NG HIGH Warning remains:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Land as soon as possible, using minimum power.",
+              "type": "Challenge"
+            },
+            {
+              "text": "HIGH NG AT INTERMEDIATE POWER SETTINGS MAY BE AN EARLY INDICATION OF IMPENDING ENGINE FAILURE.",
+              "type": "Caution"
+            },
+            {
+              "text": "NP HIGH",
+              "type": "Section"
+            },
+            {
+              "text": "PROP Lever",
+              "type": "Challenge",
+              "response": "REDUCE TO 1700 RPM OR LESS"
+            },
+            {
+              "text": "If NP not under control of PROP Lever:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "REDUCE (to idle if necessary)"
+            },
+            {
+              "text": "IF NP REMAINS BETWEEN 1730 AND 1802 RPM:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Airspeed",
+              "type": "Challenge",
+              "response": "150 KIAS"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "AS REQUIRED TO SUSTAIN FLIGHT"
+            },
+            {
+              "text": "Land as soon as practical.",
+              "type": "Challenge"
+            },
+            {
+              "text": "IF NP IS ABOVE 1802 RPM:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Airspeed",
+              "type": "Challenge",
+              "response": "120 KIAS OR LESS"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "AS REQUIRED TO SUSTAIN FLIGHT"
+            },
+            {
+              "text": "Land as soon as possible.",
+              "type": "Challenge"
+            },
+            {
+              "text": "OIL PRESS LOW",
+              "type": "Section"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "REDUCE TO MINIMUM NECESSARY"
+            },
+            {
+              "text": "Land as soon as possible.",
+              "type": "Challenge"
+            },
+            {
+              "text": "OIL PRESSURES UNDER 60 PSI MAY BE AN EARLY INDICATION OF IMPENDING ENGINE FAILURE.",
+              "type": "Caution"
+            },
+            {
+              "text": "OIL TEMP HIGH",
+              "type": "Section"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "REDUCE"
+            },
+            {
+              "text": "Airspeed",
+              "type": "Challenge",
+              "response": "140 KIAS"
+            },
+            {
+              "text": "LANDING GEAR Control",
+              "type": "Challenge",
+              "response": "DOWN"
+            },
+            {
+              "text": "If OIL TEMP HIGH Warning remains:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Land as soon as possible.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Maintenance required.",
+              "type": "Challenge"
+            },
+            {
+              "text": "OIL TEMPERATURES ABOVE 110°C ARE UNSAFE AND MAY LEAD TO A LOSS OF OIL PRESSURE AND/OR ENGINE FAILURE.",
+              "type": "Caution"
+            },
+            {
+              "text": "OVERSPEED",
+              "type": "Section"
+            },
+            {
+              "text": "Power Lever",
+              "type": "Challenge",
+              "response": "REDUCE"
+            },
+            {
+              "text": "Pitch",
+              "type": "Challenge",
+              "response": "UP AS REQUIRED"
+            },
+            {
+              "text": "PUSHER ICE MODE",
+              "type": "Section"
+            },
+            {
+              "text": "IF IN ICING CONDITIONS OR IF RESIDUAL ICE REMAINS ON THE AIRFRAME:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Flaps",
+              "type": "Challenge",
+              "response": "T/O"
+            },
+            {
+              "text": "Approach Speeds (Pusher Ice Mode)",
+              "type": "Challenge",
+              "response": "Flaps T/O: 119 – 130 KIAS"
+            },
+            {
+              "text": "IF NOT IN ICING CONDITIONS AND NO RESIDUAL ICE ON THE AIRFRAME:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "PROP HEAT Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "DE-ICE BOOTS Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "LANDING WITH NORMAL APPROACH AIRSPEEDS WHILE IN PUSHER ICE MODE MAY CAUSE AN ERRONEOUS PUSH DURING THE LANDING FLARE.",
+              "type": "Caution"
+            },
+            {
+              "text": "RUD LIM FAIL",
+              "type": "Section"
+            },
+            {
+              "text": "RUDDER LIMITER Circuit Breaker (R T ╠1►)",
+              "type": "Challenge",
+              "response": "PULL"
+            },
+            {
+              "text": "Rudder Travel",
+              "type": "Challenge",
+              "response": "DETERMINE"
+            },
+            {
+              "text": "IF RUDDER TRAVEL IS NOT LIMITED:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Do not apply large left rudder input with torque above 20%.",
+              "type": "Challenge"
+            },
+            {
+              "text": "IF RUDDER TRAVEL IS LIMITED:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Select a runway with minimum crosswind.",
+              "type": "Challenge"
+            },
+            {
+              "text": "MAXIMUM RIGHT CROSSWIND IS 10 KNOTS. STEERING DURING LANDING ROLLOUT WILL BE REDUCED.",
+              "type": "Caution"
+            },
+            {
+              "text": "Flaps",
+              "type": "Challenge",
+              "response": "T/O"
+            },
+            {
+              "text": "Approach Speed (Normal Mode)",
+              "type": "Challenge",
+              "response": "110 KIAS"
+            },
+            {
+              "text": "STICK PUSH",
+              "type": "Section"
+            },
+            {
+              "text": "Control Yoke",
+              "type": "MemoryItem",
+              "response": "GRASP AND MAINTAIN CONTROL"
+            },
+            {
+              "text": "Pitch",
+              "type": "MemoryItem",
+              "response": "REDUCE ANGLE-OF-ATTACK"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "INCREASE AS REQUIRED"
+            },
+            {
+              "text": "Airplane",
+              "type": "Challenge",
+              "response": "RECOVER TO LEVEL FLIGHT"
+            },
+            {
+              "text": "STICK SHAKER",
+              "type": "Section"
+            },
+            {
+              "text": "Control Yoke",
+              "type": "MemoryItem",
+              "response": "GRASP AND MAINTAIN CONTROL"
+            },
+            {
+              "text": "Pitch",
+              "type": "MemoryItem",
+              "response": "REDUCE ANGLE-OF-ATTACK"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "INCREASE AS REQUIRED"
+            },
+            {
+              "text": "Airplane",
+              "type": "Challenge",
+              "response": "RECOVER TO LEVEL FLIGHT"
+            },
+            {
+              "text": "TORQUE HIGH",
+              "type": "Section"
+            },
+            {
+              "text": "PROP Lever",
+              "type": "Challenge",
+              "response": "MAX RPM"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "REDUCE UNTIL TORQUE BELOW 100% OR MINIMUM SAFE POWER"
+            },
+            {
+              "text": "If TORQUE HIGH Warning remains:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Land as soon as possible, using minimum power.",
+              "type": "Challenge"
+            },
+            {
+              "text": "UNDERSPEED PROTECT ACTIVE",
+              "type": "Section"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "SMOOTHLY INCREASE AS REQUIRED TO CORRECT UNDERSPEED CONDITION"
+            },
+            {
+              "text": "RAPID POWER APPLICATION TO A HIGH POWER SETTING MAY RESULT IN PITCH ATTITUDES UP TO 20 DEGREES NOSE UP DURING RECOVERY FROM UNDERSPEED PROTECTION.",
+              "type": "Caution"
+            },
+            {
+              "text": "Alternative options:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "AP/TRIM DISC Switch",
+              "type": "Challenge",
+              "response": "PRESS AND RELEASE"
+            },
+            {
+              "text": "Manually fly the airplane.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Or:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Autopilot",
+              "type": "Challenge",
+              "response": "CHANGE MODES TO INCREASE AIRSPEED"
+            },
+            {
+              "text": "WSH HEAT ON",
+              "type": "Section"
+            },
+            {
+              "text": "WINDSH HEAT Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "If WSH HEAT ON Warning persists:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "REDUCE TO MINIMUM NECESSARY FOR FLIGHT"
+            },
+            {
+              "text": "Pilot Windshield",
+              "type": "Challenge",
+              "response": "CHECK"
+            },
+            {
+              "text": "IF BUBBLING, ABNORMALITIES, OR VISUAL DISTORTION IS OBSERVED:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Crew Oxygen Masks (above 14,000 ft)",
+              "type": "Challenge",
+              "response": "DON"
+            },
+            {
+              "text": "MASK MICS Switch",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "Reduce power and descend to 10,000 ft or minimum safe altitude (if higher).",
+              "type": "Challenge"
+            },
+            {
+              "text": "Land as soon as possible using side-slip maneuver, if necessary, to maintain visual contact with the runway.",
+              "type": "Challenge"
+            },
+            {
+              "text": "IF NO BUBBLING, ABNORMALITIES, OR VISUAL DISTORTION IS OBSERVED:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Avoid icing conditions.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Land as soon as practical.",
+              "type": "Challenge"
+            }
+          ]
+        },
+        {
+          "name": "WARNING (RED) CAS MESSAGES — ON GROUND",
+          "entries": [
+            {
+              "text": "CHECK GEAR — ON GROUND",
+              "type": "Section"
+            },
+            {
+              "text": "LANDING GEAR Control",
+              "type": "Challenge",
+              "response": "VERIFY DOWN"
+            },
+            {
+              "text": "If taxiing, stop immediately and do not turn.",
+              "type": "Challenge"
+            },
+            {
+              "text": "If the engine is running, shut down engine.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Maintenance required before flight.",
+              "type": "Challenge"
+            },
+            {
+              "text": "DE-ICE FAIL — ON GROUND",
+              "type": "Section"
+            },
+            {
+              "text": "DE-ICE BOOTS Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "Maintenance required before flight into known icing.",
+              "type": "Challenge"
+            },
+            {
+              "text": "DOOR UNLOCKED — ON GROUND",
+              "type": "Section"
+            },
+            {
+              "text": "If taxiing, stop airplane in a safe location.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Cabin Door",
+              "type": "Challenge",
+              "response": "CHECK HANDLE AND LOCK"
+            },
+            {
+              "text": "If cabin door secure and DOOR UNLOCKED Warning persists:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Shut down engine.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Maintenance required before flight.",
+              "type": "Challenge"
+            },
+            {
+              "text": "ENGINE CHIP — ON GROUND",
+              "type": "Section"
+            },
+            {
+              "text": "BEFORE ENGINE START",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Do not start engine.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Maintenance required before flight.",
+              "type": "Challenge"
+            },
+            {
+              "text": "AFTER ENGINE START AND BEFORE TAKEOFF",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Return to parking.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Shut down engine.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Maintenance required before flight.",
+              "type": "Challenge"
+            },
+            {
+              "text": "ITT HIGH — ON GROUND",
+              "type": "Section"
+            },
+            {
+              "text": "COND Lever",
+              "type": "MemoryItem",
+              "response": "FUEL CUTOFF"
+            },
+            {
+              "text": "IGNITER Switch",
+              "type": "Challenge",
+              "response": "AUTO"
+            },
+            {
+              "text": "After NG below 30%:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "START Switch",
+              "type": "Challenge",
+              "response": "PRESS & RELEASE"
+            },
+            {
+              "text": "After 30 seconds or ITT below 750°C whichever occurs first:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "STARTER GEN Switch",
+              "type": "Challenge",
+              "response": "OFF"
+            },
+            {
+              "text": "OIL TEMP HIGH — ON GROUND",
+              "type": "Section"
+            },
+            {
+              "text": "Airplane",
+              "type": "Challenge",
+              "response": "POSITION INTO THE WIND"
+            },
+            {
+              "text": "COND Lever",
+              "type": "Challenge",
+              "response": "HIGH"
+            },
+            {
+              "text": "PROP Lever",
+              "type": "Challenge",
+              "response": "MAX RPM"
+            },
+            {
+              "text": "POWER Lever",
+              "type": "Challenge",
+              "response": "INCREASE"
+            },
+            {
+              "text": "If OIL TEMP HIGH Warning remains:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Shut down engine",
+              "type": "Challenge"
+            },
+            {
+              "text": "Maintenance required before flight.",
+              "type": "Challenge"
+            },
+            {
+              "text": "OXYGEN USE — FRONT SEATS",
+              "type": "Section"
+            },
+            {
+              "text": "IF TIME PERMITS, BEFORE USING OXYGEN, REMOVE ANY POTENTIALLY FLAMMABLE SUBSTANCES FROM YOUR FACE (OILS, GREASE, SOAP, LIPSTICK, MAKEUP, ETC.).",
+              "type": "Warning"
+            },
+            {
+              "text": "Oxygen Mask",
+              "type": "Challenge",
+              "response": "DON"
+            },
+            {
+              "text": "MASK MICS Switch",
+              "type": "Challenge",
+              "response": "ON"
+            },
+            {
+              "text": "Oxygen Flow",
+              "type": "Challenge",
+              "response": "CHECK"
+            },
+            {
+              "text": "IF SMOKE IN COCKPIT:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Oxygen Mask Regulator",
+              "type": "Challenge",
+              "response": "EMGCY"
+            },
+            {
+              "text": "IF NO SMOKE IN COCKPIT",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Oxygen Mask Regulator",
+              "type": "Challenge",
+              "response": "NORMAL (100% if required)"
+            },
+            {
+              "text": "CRACKED OR DELAMINATED WINDSHIELD OR WINDOW IN FLIGHT",
+              "type": "Section"
+            },
+            {
+              "text": "Crew Oxygen Masks (above 14,000 ft)",
+              "type": "MemoryItem",
+              "response": "DON"
+            },
+            {
+              "text": "MASK MICS Switch",
+              "type": "Challenge",
+              "response": "AS REQUIRED"
+            },
+            {
+              "text": "WINDSH HEAT",
+              "type": "Challenge",
+              "response": "OFF (if not required)"
+            },
+            {
+              "text": "All Occupants",
+              "type": "Challenge",
+              "response": "SEATED WITH SEATBELTS SECURE"
+            },
+            {
+              "text": "Airspeed",
+              "type": "Challenge",
+              "response": "REDUCE TO MINIMUM PRACTICAL"
+            },
+            {
+              "text": "Landing Field Elevation",
+              "type": "Challenge",
+              "response": "SET TO 10,000 ft"
+            },
+            {
+              "text": "Descend to 10,000 ft or minimum safe altitude (if higher).",
+              "type": "Challenge"
+            },
+            {
+              "text": "Land as soon as practical.",
+              "type": "Challenge"
+            }
+          ]
+        },
+        {
+          "name": "EXITING SEVERE ICING OR SLD CONDITIONS",
+          "entries": [
+            {
+              "text": "Exit the area immediately by changing altitude and/or course.",
+              "type": "Challenge"
+            },
+            {
+              "text": "If autopilot is engaged:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Control Yoke",
+              "type": "Challenge",
+              "response": "GRASP AND MAINTAIN CONTROL"
+            },
+            {
+              "text": "AP/TRIM DISC Switch",
+              "type": "Challenge",
+              "response": "PRESS & HOLD"
+            },
+            {
+              "text": "Do not re-engage the autopilot until the airframe is clear of ice.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Avoid abrupt and excessive maneuvering.",
+              "type": "Challenge"
+            },
+            {
+              "text": "If an unusual roll response or uncommanded control movement is observed, reduce angle of attack by increasing airspeed and/or rolling wings level (if in a turn), and apply additional power, if needed.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Avoid extending flaps during extended operations in icing conditions to reduce the possibility of ice forming on the upper surface of the wing further aft than normal.",
+              "type": "Challenge"
+            },
+            {
+              "text": "If flaps are extended, do not retract them until the airframe is clear of ice.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Report these weather conditions to Air Traffic Control.",
+              "type": "Challenge"
+            }
+          ]
+        },
+        {
+          "name": "WARNING (RED) CAS MESSAGES — IN FLIGHT",
+          "entries": [
+            {
+              "text": "AUTO DESCENT",
+              "type": "Section"
+            },
+            {
+              "text": "To acknowledge and silence EDM alert:",
+              "type": "Subtitle"
+            },
+            {
+              "text": "Control Yoke",
+              "type": "Challenge",
+              "response": "GRASP AND MAINTAIN CONTROL"
+            },
+            {
+              "text": "AP/TRIM DISC Switch",
+              "type": "Challenge",
+              "response": "PRESS & HOLD"
+            },
+            {
+              "text": "Do not re-engage the autopilot until the airframe is clear of ice.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Avoid abrupt and excessive maneuvering.",
+              "type": "Challenge"
+            },
+            {
+              "text": "If an unusual roll response or uncommanded control movement is observed, reduce angle of attack by increasing airspeed and/or rolling wings level (if in a turn), and apply additional power, if needed.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Avoid extending flaps during extended operations in icing conditions to reduce the possibility of ice forming on the upper surface of the wing further aft than normal.",
+              "type": "Challenge"
+            },
+            {
+              "text": "If flaps are extended, do not retract them until the airframe is clear of ice.",
+              "type": "Challenge"
+            },
+            {
+              "text": "Report these weather conditions to Air Traffic Control.",
+              "type": "Challenge"
+            }
+          ]
+        }
+      ],
+      "enableGoToNextChecklist": true
+    }
+  ]
 }

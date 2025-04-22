@@ -15,6 +15,57 @@
       "value": "A"
     }
   ],
+  "branchChecklists": [],
+  "entryTypes": [
+    {
+      "name": "Challenge",
+      "color": "white",
+      "fontSize": 15,
+      "interaction": "checkbox"
+    },
+    {
+      "name": "MemoryItem",
+      "color": "magenta",
+      "fontSize": 15,
+      "interaction": "checkbox"
+    },
+    {
+      "name": "Warning",
+      "color": "red",
+      "fontSize": 15,
+      "interaction": "scrollStop"
+    },
+    {
+      "name": "Caution",
+      "color": "yellow",
+      "fontSize": 15,
+      "interaction": "scrollStop"
+    },
+    {
+      "name": "Note",
+      "color": "silver",
+      "fontSize": 15,
+      "interaction": "noScrollStop"
+    },
+    {
+      "name": "Subtitle",
+      "color": "white",
+      "fontSize": 18,
+      "interaction": "noScrollStop"
+    },
+    {
+      "name": "Section",
+      "color": "green",
+      "fontSize": 15,
+      "interaction": "noScrollStop"
+    }
+  ],
+  "images": [],
+  "legacySpaceEncoding": false,
+  "defaultChecklist": {
+    "group": 0,
+    "checklist": 0
+  },
   "groups": [
     {
       "name": "NORMAL PROCEDURES",
@@ -783,56 +834,5 @@
       ],
       "enableGoToNextChecklist": false
     }
-  ],
-  "branchChecklists": [],
-  "entryTypes": [
-    {
-      "name": "Challenge",
-      "color": "white",
-      "fontSize": 15,
-      "interaction": "checkbox"
-    },
-    {
-      "name": "MemoryItem",
-      "color": "magenta",
-      "fontSize": 15,
-      "interaction": "checkbox"
-    },
-    {
-      "name": "Warning",
-      "color": "red",
-      "fontSize": 15,
-      "interaction": "scrollStop"
-    },
-    {
-      "name": "Caution",
-      "color": "yellow",
-      "fontSize": 15,
-      "interaction": "scrollStop"
-    },
-    {
-      "name": "Note",
-      "color": "silver",
-      "fontSize": 15,
-      "interaction": "noScrollStop"
-    },
-    {
-      "name": "Subtitle",
-      "color": "white",
-      "fontSize": 18,
-      "interaction": "noScrollStop"
-    },
-    {
-      "name": "Section",
-      "color": "green",
-      "fontSize": 15,
-      "interaction": "noScrollStop"
-    }
-  ],
-  "images": [],
-  "legacySpaceEncoding": false,
-  "defaultChecklist": {
-    "group": 0,
-    "checklist": 0
-  }
+  ]
 }
