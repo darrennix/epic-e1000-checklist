@@ -562,6 +562,10 @@
               "response": "OFF"
             },
             {
+              "text": "",
+              "type": "Section"
+            },
+            {
               "text": "If fire is extinguished:",
               "type": "Subtitle"
             },
@@ -573,6 +577,10 @@
             {
               "text": "AFTER AN ENGINE FIRE IN FLIGHT, DO NOT ATTEMPT AN AIR START.",
               "type": "Warning"
+            },
+            {
+              "text": "",
+              "type": "Section"
             },
             {
               "text": "If smoke evacuation is required:",
@@ -603,6 +611,15 @@
               "type": "Challenge",
               "response": "ON"
             },
+            {
+              "text": "",
+              "type": "Section"
+            },
+            {
+              "text": "",
+              "type": "Section"
+            },
+            
             {
               "text": "If cabin altitude exceeds 14,000 ft and passenger masks do not automatically deploy:",
               "type": "Subtitle"
@@ -670,6 +687,11 @@
               "type": "Challenge",
               "response": "USE AS REQUIRED"
             },
+
+            {
+              "text": "",
+              "type": "Section"
+            },
             {
               "text": "IF FIRE NOT EXTINGUISHED",
               "type": "Subtitle"
@@ -682,6 +704,11 @@
               "text": "Perform FORCED LANDING (3.8.1).",
               "type": "Challenge"
             },
+
+            {
+              "text": "",
+              "type": "Section"
+            },
             {
               "text": "IF FIRE IS EXTINGUISHED",
               "type": "Subtitle"
@@ -692,44 +719,78 @@
             },
             {
               "text": "If smoke or fumes are present or essential electrical equipment is required:",
-              "type": "Subtitle"
+              "type": "Note"
             },
             {
               "text": "X-TIE Circuit Breaker (L T \u25602\u25ba)",
               "type": "Challenge",
-              "response": "PULL"
+              "response": "PULL",
+              "justification": "indent1"
             },
             {
               "text": "BATT 1 Switch",
               "type": "Challenge",
-              "response": "ON"
+              "response": "ON",
+              "justification": "indent1"
             },
             {
               "text": "If smoke and/or fumes are present:",
-              "type": "Subtitle"
+              "type": "Note"
             },
             {
               "text": "HI PRESS AIR Switch",
               "type": "Challenge",
-              "response": "ON"
+              "response": "ON",
+              "justification": "indent1"
             },
             {
               "text": "DOOR SEAL Switch",
               "type": "Challenge",
-              "response": "OFF"
+              "response": "OFF",
+              "justification": "indent1"
             },
             {
               "text": "If smokes/fumes return:",
-              "type": "Subtitle"
+              "type": "Note"
             },
             {
               "text": "BATT 1 Switch",
               "type": "Challenge",
-              "response": "OFF"
+              "response": "OFF",
+              "justification": "indent1"
+            },
+
+            {
+              "text": "",
+              "type": "Section"
             },
             {
               "text": "Land as soon as possible.",
-              "type": "Subtitle"
+              "type": "Challenge"
+            },
+            {
+              "text": "Landing Gear will not extend normally, plan for extending landing gear using Emergency Landing Gear Extension.",
+              "type": "Note"
+            },
+            {
+              "text": "Airspeed: Below 150 KIAS",
+              "type": "Note"
+            },
+            {
+              "text": "Emergency Gear Extension Handle: Activate",
+              "type": "Note"
+            },
+            {
+              "text": "Flaps will not extend or retract, plan on landing with flaps in current position.",
+              "type": "Note"
+            },
+            {
+              "text": "Approach Speed (Normal Mode): 115 KIAS",
+              "type": "Note"
+            },
+            {
+              "text": "ALLOW FOR LANDING DISTANCE INCREASE OF UP TO 65% MORE THAN FLAPS FULL.",
+              "type": "Caution"
             }
           ]
         },
