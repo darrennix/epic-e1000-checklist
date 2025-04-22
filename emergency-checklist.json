@@ -113,12 +113,21 @@
               "response": "SEATED WITH SEATBELTS SECURE"
             },
             {
+              "text": "",
+              "type": "Section"
+            },
+            {
               "text": "If in range of landing site:",
               "type": "Subtitle"
             },
             {
               "text": "Expedite descent to FL230.",
-              "type": "Challenge"
+              "type": "Challenge",
+              "justification": "indent1"
+            },
+            {
+              "text": "",
+              "type": "Section"
             },
             {
               "text": "If cabin altitude exceeds 14,000 ft and passenger masks do not automatically deploy:",
@@ -127,7 +136,12 @@
             {
               "text": "EMERG OXYGEN Switch",
               "type": "Challenge",
-              "response": "ON"
+              "response": "ON",
+              "justification": "indent1"
+            },
+            {
+              "text": "",
+              "type": "Section"
             },
             {
               "text": "IF TIME PERMITS",
@@ -135,7 +149,12 @@
             },
             {
               "text": "Perform AIR START (3.6.2).",
-              "type": "Challenge"
+              "type": "Challenge",
+              "justification": "indent1"
+            },
+            {
+              "text": "",
+              "type": "Section"
             },
             {
               "text": "IF TIME DOES NOT PERMIT",
@@ -143,7 +162,8 @@
             },
             {
               "text": "Perform FORCED LANDING (3.8.1).",
-              "type": "Challenge"
+              "type": "Challenge",
+              "justification": "indent1"
             }
           ]
         },
@@ -170,18 +190,24 @@
               "type": "Challenge"
             },
             {
+              "text": "",
+              "type": "Section"
+            },
+            {
               "text": "After touchdown:",
               "type": "Subtitle"
             },
             {
               "text": "MAN OVRD Lever",
               "type": "Challenge",
-              "response": "FULL DOWN"
+              "response": "FULL DOWN",
+              "justification": "indent1"
             },
             {
               "text": "Brakes",
               "type": "Challenge",
-              "response": "AS REQUIRED"
+              "response": "AS REQUIRED",
+              "justification": "indent1"
             },
             {
               "text": "DEPENDING ON AIRFIELD CONDITIONS, AND AIRPLANE WEIGHT AND CONFIGURATION, THE AVAILABLE POWER MAY NOT BE SUFFICIENT TO ENSURE A GO-AROUND.",
@@ -218,7 +244,7 @@
             {
               "text": "Pitch",
               "type": "MemoryItem",
-              "response": "10\u00b0 TO 20\u00b0 NOSE DOWN"
+              "response": "10° TO 20° NOSE DOWN"
             },
             {
               "text": "Airspeed",
@@ -366,6 +392,10 @@
               "response": "MONITOR"
             },
             {
+              "text": "",
+              "type": "Section"
+            },
+            {
               "text": "IF AIR START FAILS",
               "type": "Subtitle"
             },
@@ -401,6 +431,9 @@
             {
               "text": "Perform FORCED LANDING (3.8.1).",
               "type": "Challenge"
+            {
+              "text": "",
+              "type": "Section"
             },
             {
               "text": "IF ENGINE RELIGHTS AND AFTER NG GREATER THAN 51%",
