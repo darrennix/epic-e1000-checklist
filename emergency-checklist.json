@@ -54,7 +54,7 @@
       "interaction": "noScrollStop"
     },
     {
-      "name": "Section",
+      "name": "Subtitle",
       "color": "green",
       "fontSize": 15,
       "interaction": "noScrollStop"
@@ -114,7 +114,7 @@
             },
             {
               "text": "",
-              "type": "Section"
+              "type": "Subtitle"
             },
             {
               "text": "If in range of landing site:",
@@ -127,7 +127,7 @@
             },
             {
               "text": "",
-              "type": "Section"
+              "type": "Subtitle"
             },
             {
               "text": "If cabin altitude exceeds 14,000 ft and passenger masks do not automatically deploy:",
@@ -141,7 +141,7 @@
             },
             {
               "text": "",
-              "type": "Section"
+              "type": "Subtitle"
             },
             {
               "text": "IF TIME PERMITS",
@@ -154,7 +154,7 @@
             },
             {
               "text": "",
-              "type": "Section"
+              "type": "Subtitle"
             },
             {
               "text": "IF TIME DOES NOT PERMIT",
@@ -191,7 +191,7 @@
             },
             {
               "text": "",
-              "type": "Section"
+              "type": "Subtitle"
             },
             {
               "text": "After touchdown:",
@@ -393,7 +393,7 @@
             },
             {
               "text": "",
-              "type": "Section"
+              "type": "Subtitle"
             },
             {
               "text": "IF AIR START FAILS",
@@ -434,7 +434,7 @@
             },
             {
               "text": "",
-              "type": "Section"
+              "type": "Subtitle"
             },
             {
               "text": "IF ENGINE RELIGHTS AND AFTER NG GREATER THAN 51%",
@@ -563,7 +563,7 @@
             },
             {
               "text": "",
-              "type": "Section"
+              "type": "Subtitle"
             },
             {
               "text": "If fire is extinguished:",
@@ -580,7 +580,7 @@
             },
             {
               "text": "",
-              "type": "Section"
+              "type": "Subtitle"
             },
             {
               "text": "If smoke evacuation is required:",
@@ -613,13 +613,8 @@
             },
             {
               "text": "",
-              "type": "Section"
+              "type": "Subtitle"
             },
-            {
-              "text": "",
-              "type": "Section"
-            },
-            
             {
               "text": "If cabin altitude exceeds 14,000 ft and passenger masks do not automatically deploy:",
               "type": "Subtitle"
@@ -630,8 +625,13 @@
               "response": "ON"
             },
             {
-              "text": "Perform FORCED LANDING (3.8.1)",
+              "text": "",
               "type": "Subtitle"
+            },
+            
+            {
+              "text": "Perform FORCED LANDING (3.8.1)",
+              "type": "Challenge"
             }
           ]
         },
@@ -690,7 +690,7 @@
 
             {
               "text": "",
-              "type": "Section"
+              "type": "Subtitle"
             },
             {
               "text": "IF FIRE NOT EXTINGUISHED",
@@ -707,7 +707,7 @@
 
             {
               "text": "",
-              "type": "Section"
+              "type": "Subtitle"
             },
             {
               "text": "IF FIRE IS EXTINGUISHED",
@@ -762,7 +762,7 @@
 
             {
               "text": "",
-              "type": "Section"
+              "type": "Subtitle"
             },
             {
               "text": "Land as soon as possible.",
