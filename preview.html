@@ -13,46 +13,80 @@
             background-color: #f5f5f5;
         }
         @media print {
+            /* Reset all elements */
+            * {
+                box-shadow: none !important;
+                -webkit-box-shadow: none !important;
+                -moz-box-shadow: none !important;
+                text-shadow: none !important;
+                background-color: white !important;
+                background-image: none !important;
+            }
+            
             body {
-                background-color: white;
-                padding: 0;
-                margin: 0;
+                background-color: white !important;
+                padding: 0 !important;
+                margin: 0 !important;
             }
+            
             #content {
-                display: block;
-                margin: 0;
-                padding: 0;
+                display: block !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                background: white !important;
             }
+            
             .page {
-                position: relative;
-                width: 100%;
-                height: auto;
-                min-height: 8.5in;
-                margin: 0;
-                padding: 0.25in;
-                box-shadow: none;
-                border: none;
-                page-break-after: always;
-                overflow: visible;
-                column-count: 3;
-                column-gap: 10px;
-                column-fill: balance;
+                position: relative !important;
+                width: 100% !important;
+                height: auto !important;
+                min-height: initial !important;
+                margin: 0 !important;
+                padding: 0.25in !important;
+                box-shadow: none !important;
+                -webkit-box-shadow: none !important;
+                -moz-box-shadow: none !important;
+                border: none !important;
+                page-break-after: always !important;
+                column-count: 3 !important;
+                column-gap: 10px !important;
+                column-fill: balance !important;
+                background-color: white !important;
+                overflow: visible !important;
             }
+            
             #page-front {
-                page-break-after: always;
+                page-break-after: always !important;
             }
+            
             #page-back {
-                page-break-after: avoid;
+                page-break-after: avoid !important;
             }
+            
             /* Hide non-checklist elements */
             .page-controls,
             .page-label {
                 display: none !important;
+                visibility: hidden !important;
             }
+            
+            .checklist-column {
+                border: 1px solid #000 !important;
+                margin-bottom: 8px !important;
+                break-inside: avoid-column !important;
+                page-break-inside: avoid !important;
+                background-color: white !important;
+            }
+            
+            .checklist-title {
+                background-color: white !important;
+                border-bottom: 1px solid #000 !important;
+            }
+            
             /* Ensure columns print correctly */
             @page {
-                size: landscape;
-                margin: 0.25in;
+                size: landscape !important;
+                margin: 0.25in !important;
             }
         }
         #content {
