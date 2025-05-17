@@ -16,13 +16,43 @@
             body {
                 background-color: white;
                 padding: 0;
+                margin: 0;
             }
-            .page-break {
+            #content {
+                display: block;
+                margin: 0;
+                padding: 0;
+            }
+            .page {
+                position: relative;
+                width: 100%;
+                height: auto;
+                min-height: 8.5in;
+                margin: 0;
+                padding: 0.25in;
+                box-shadow: none;
+                border: none;
+                page-break-after: always;
+                overflow: visible;
+                column-count: 3;
+                column-gap: 10px;
+                column-fill: balance;
+            }
+            #page-front {
                 page-break-after: always;
             }
+            #page-back {
+                page-break-after: avoid;
+            }
+            /* Hide non-checklist elements */
             .page-controls,
             .page-label {
-                display: none;
+                display: none !important;
+            }
+            /* Ensure columns print correctly */
+            @page {
+                size: landscape;
+                margin: 0.25in;
             }
         }
         #content {
