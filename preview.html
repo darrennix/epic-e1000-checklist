@@ -46,15 +46,11 @@
         }
         .checklist-item {
             display: flex;
-            border-bottom: 1px solid #eee;
             padding: 2px 5px;
             font-size: 13px;
             line-height: 1.3;
             position: relative;
             overflow: visible;
-        }
-        .checklist-item:last-child {
-            border-bottom: none;
         }
         .item-text {
             background-color: #fff;
@@ -130,7 +126,7 @@
                 // Create columns for each checklist in the group
                 group.checklists.forEach(checklist => {
                     html += `<div class="checklist-column">`;
-                    html += `<h3 class="checklist-title">${checklist.name}</h3>`;
+                    html += `<h4 class="checklist-title">${checklist.name}</h4>`;
                     
                     // Track the current section to handle section titles
                     let currentSection = '';
