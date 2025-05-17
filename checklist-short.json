@@ -756,6 +756,11 @@
               "response": "FUEL CUTOFF"
             },
             {
+                "text": "STARTER GEN Switch",
+                "type": "Challenge",
+                "response": "OFF"
+            },
+            {
               "text": "",
               "type": "Note"
             },
