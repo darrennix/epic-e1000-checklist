@@ -334,21 +334,21 @@
               "type": "Note"
             },
             {
+                "text": "Inertial Separator",
+                "type": "Challenge",
+                "response": "TEST"
+            },
+            {
+                "text": "(prior to flight into icing conditions)",
+                "type": "Note"
+            },
+            {
               "text": "Propeller Overspeed Governor",
               "type": "Challenge",
               "response": "TEST"
             },
             {
               "text": "(first flight of day)",
-              "type": "Note"
-            },
-            {
-              "text": "Inertial Separator",
-              "type": "Challenge",
-              "response": "TEST"
-            },
-            {
-              "text": "(prior to flight into icing conditions)",
               "type": "Note"
             },
             {
