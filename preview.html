@@ -6,65 +6,88 @@
     <title>Epic E1000 GX Checklist Preview</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+            font-family: sans-serif;
+            line-height: 1.2;
         }
         h1 {
             text-align: center;
             margin-bottom: 20px;
         }
-        h2 {
-            margin-top: 30px;
-            background-color: #f0f0f0;
-            padding: 10px;
-            border-radius: 5px;
+        .checklist-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
+        .checklist-column {
+            flex: 1;
+            min-width: 300px;
+            max-width: 450px;
+            border: 2px solid #000;
+            margin-bottom: 10px;
         }
-        th {
-            background-color: #444;
-            color: white;
-            text-align: left;
-            padding: 10px;
+        .checklist-title {
+            background-color: #00bfff;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            padding: 4px 0;
+            margin: 0;
+            border-bottom: 1px solid #000;
         }
-        td {
-            padding: 8px 10px;
+        .section-title {
+            background-color: #d3d3d3;
+            padding: 2px 4px;
+            margin: 0;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 1px solid #000;
+        }
+        .checklist-item {
+            display: flex;
+            justify-content: space-between;
             border-bottom: 1px solid #ddd;
+            padding: 2px 4px;
+            font-size: 14px;
+            line-height: 1.2;
         }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
+        .checklist-item:last-child {
+            border-bottom: none;
         }
-        .challenge { font-weight: normal; }
-        .memoryItem { color: #800080; font-weight: bold; }
-        .warning { color: #ff0000; font-weight: bold; }
-        .caution { color: #ffa500; font-weight: bold; }
-        .note { color: #999; font-style: italic; }
-        .subtitle { color: #007700; font-weight: bold; }
+        .item-text {
+            flex: 3;
+            text-align: left;
+            padding-right: 10px;
+        }
+        .item-response {
+            flex: 2;
+            text-align: right;
+            font-weight: bold;
+        }
         .metadata {
             background-color: #f8f8f8;
-            padding: 15px;
+            padding: 10px;
             border-radius: 5px;
             margin-bottom: 20px;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
         }
+        .challenge { font-weight: normal; }
+        .memoryItem { color: #800080; }
+        .warning { color: #ff0000; }
+        .caution { color: #ffa500; }
+        .note { color: #999; font-style: italic; }
+        .subtitle { color: #007700; }
     </style>
 </head>
 <body>
-    <h1>Epic E1000 GX Checklist</h1>
-    <div id="metadata" class="metadata"></div>
-    <div id="content"></div>
+    <div id="content" class="checklist-container"></div>
 
     <script>
         // Load the checklist data
         fetch('checklist-short.json')
             .then(response => response.json())
             .then(data => {
-                displayMetadata(data);
                 displayChecklists(data);
             })
             .catch(error => {
@@ -73,47 +96,42 @@
                     '<p>Error loading checklist data. Please check the console for details.</p>';
             });
 
-        function displayMetadata(data) {
-            const metadataDiv = document.getElementById('metadata');
-            let html = '<h3>Checklist Information</h3><ul>';
-            
-            html += `<li><strong>Description:</strong> ${data.description}</li>`;
-            html += `<li><strong>Version:</strong> ${data.version}</li>`;
-            
-            data.customFields.forEach(field => {
-                html += `<li><strong>${field.name}:</strong> ${field.value}</li>`;
-            });
-            
-            html += '</ul>';
-            metadataDiv.innerHTML = html;
-        }
-
         function displayChecklists(data) {
             const contentDiv = document.getElementById('content');
             let html = '';
             
             // For each group of checklists
             data.groups.forEach(group => {
-                html += `<h2>${group.name}</h2>`;
-                
-                // For each checklist in the group
+                // Create columns for each checklist in the group
                 group.checklists.forEach(checklist => {
-                    html += `<h3>${checklist.name}</h3>`;
-                    html += '<table><thead><tr><th>Item</th><th>Response</th></tr></thead><tbody>';
+                    html += `<div class="checklist-column">`;
+                    html += `<h3 class="checklist-title">${checklist.name}</h3>`;
+                    
+                    // Track the current section to handle section titles
+                    let currentSection = '';
                     
                     // For each entry in the checklist
                     checklist.entries.forEach(entry => {
                         const entryClass = entry.type.toLowerCase();
                         const response = entry.response || '';
-                        const indent = entry.justification === 'indent1' ? '&nbsp;&nbsp;&nbsp;&nbsp;' : '';
                         
-                        html += `<tr class="${entryClass}">`;  
-                        html += `<td>${indent}${entry.text}</td>`;
-                        html += `<td>${response}</td>`;
-                        html += '</tr>';
+                        // Handle section titles differently
+                        if (entry.type === 'Subtitle' && !response) {
+                            html += `<h4 class="section-title">${entry.text}</h4>`;
+                            currentSection = entry.text;
+                        } else if (entry.type === 'Note' || entry.type === 'Warning' || entry.type === 'Caution') {
+                            html += `<div class="checklist-item ${entryClass}">`;
+                            html += `<div class="item-text" style="flex: 1">${entry.text}</div>`;
+                            html += `</div>`;
+                        } else {
+                            html += `<div class="checklist-item ${entryClass}">`;
+                            html += `<div class="item-text">${entry.text}</div>`;
+                            html += `<div class="item-response">${response}</div>`;
+                            html += `</div>`;
+                        }
                     });
                     
-                    html += '</tbody></table>';
+                    html += `</div>`; // Close the checklist column
                 });
             });
             
