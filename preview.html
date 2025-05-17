@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic E1000 GX Checklist Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 30px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th {
+            background-color: #444;
+            color: white;
+            text-align: left;
+            padding: 10px;
+        }
+        td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .challenge { font-weight: normal; }
+        .memoryItem { color: #800080; font-weight: bold; }
+        .warning { color: #ff0000; font-weight: bold; }
+        .caution { color: #ffa500; font-weight: bold; }
+        .note { color: #999; font-style: italic; }
+        .subtitle { color: #007700; font-weight: bold; }
+        .metadata {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Epic E1000 GX Checklist</h1>
+    <div id="metadata" class="metadata"></div>
+    <div id="content"></div>
+
+    <script>
+        // Load the checklist data
+        fetch('checklist-short.json')
+            .then(response => response.json())
+            .then(data => {
+                displayMetadata(data);
+                displayChecklists(data);
+            })
+            .catch(error => {
+                console.error('Error loading checklist data:', error);
+                document.getElementById('content').innerHTML = 
+                    '<p>Error loading checklist data. Please check the console for details.</p>';
+            });
+
+        function displayMetadata(data) {
+            const metadataDiv = document.getElementById('metadata');
+            let html = '<h3>Checklist Information</h3><ul>';
+            
+            html += `<li><strong>Description:</strong> ${data.description}</li>`;
+            html += `<li><strong>Version:</strong> ${data.version}</li>`;
+            
+            data.customFields.forEach(field => {
+                html += `<li><strong>${field.name}:</strong> ${field.value}</li>`;
+            });
+            
+            html += '</ul>';
+            metadataDiv.innerHTML = html;
+        }
+
+        function displayChecklists(data) {
+            const contentDiv = document.getElementById('content');
+            let html = '';
+            
+            // For each group of checklists
+            data.groups.forEach(group => {
+                html += `<h2>${group.name}</h2>`;
+                
+                // For each checklist in the group
+                group.checklists.forEach(checklist => {
+                    html += `<h3>${checklist.name}</h3>`;
+                    html += '<table><thead><tr><th>Item</th><th>Response</th></tr></thead><tbody>';
+                    
+                    // For each entry in the checklist
+                    checklist.entries.forEach(entry => {
+                        const entryClass = entry.type.toLowerCase();
+                        const response = entry.response || '';
+                        const indent = entry.justification === 'indent1' ? '&nbsp;&nbsp;&nbsp;&nbsp;' : '';
+                        
+                        html += `<tr class="${entryClass}">`;  
+                        html += `<td>${indent}${entry.text}</td>`;
+                        html += `<td>${response}</td>`;
+                        html += '</tr>';
+                    });
+                    
+                    html += '</tbody></table>';
+                });
+            });
+            
+            contentDiv.innerHTML = html;
+        }
+    </script>
+</body>
+</html>
