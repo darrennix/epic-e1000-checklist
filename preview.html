@@ -8,24 +8,82 @@
         body {
             font-family: sans-serif;
             line-height: 1.2;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
         }
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .page-break {
+                page-break-after: always;
+            }
+            .page-controls,
+            .page-label {
+                display: none;
+            }
         }
-        .checklist-container {
+        #content {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .page {
+            width: 11in;
+            height: 8.5in;
+            padding: 0.25in;
+            background-color: white;
+            box-sizing: border-box;
+            column-count: 3;
+            column-gap: 10px;
+            column-fill: auto;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        .page-label {
+            position: absolute;
+            top: 0.1in;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 12px;
+            color: #666;
+            z-index: 10;
+        }
+        .page-controls {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
             gap: 10px;
-            justify-content: center;
+            z-index: 1000;
+            background: white;
+            padding: 5px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .page-controls button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        @media print {
+            .page-controls {
+                display: none;
+            }
         }
         .checklist-column {
-            flex: 1;
-            min-width: 320px;
-            max-width: 450px;
             border: 2px solid #000;
-            margin-bottom: 10px;
             background-color: #fff;
+            margin-bottom: 10px;
+            break-inside: avoid-column;
+            page-break-inside: avoid;
+            display: inline-block;
+            width: 100%;
         }
         .checklist-title {
             background-color: #00bfff;
@@ -102,7 +160,10 @@
     </style>
 </head>
 <body>
-    <div id="content" class="checklist-container"></div>
+    <div id="content"></div>
+    <div class="page-controls">
+        <button id="printBtn">Print Checklist</button>
+    </div>
 
     <script>
         // Load the checklist data
@@ -110,6 +171,7 @@
             .then(response => response.json())
             .then(data => {
                 displayChecklists(data);
+                setupControls();
             })
             .catch(error => {
                 console.error('Error loading checklist data:', error);
@@ -121,15 +183,21 @@
             const contentDiv = document.getElementById('content');
             let html = '';
             
+            // Create front and back pages
+            let frontPageHtml = '<div class="page page-front" id="page-front">';
+            let backPageHtml = '<div class="page page-back" id="page-back">';
+            
+            // Process checklists by page number
+            const page1Checklists = [];
+            const page2Checklists = [];
+            
             // For each group of checklists
             data.groups.forEach(group => {
-                // Create columns for each checklist in the group
+                // Process each checklist
                 group.checklists.forEach(checklist => {
-                    html += `<div class="checklist-column">`;
-                    html += `<h4 class="checklist-title">${checklist.name}</h4>`;
-                    
-                    // Track the current section to handle section titles
-                    let currentSection = '';
+                    let checklistHtml = '';
+                    checklistHtml += `<div class="checklist-column">`;
+                    checklistHtml += `<h4 class="checklist-title">${checklist.name}</h4>`;
                     
                     // For each entry in the checklist
                     checklist.entries.forEach(entry => {
@@ -138,26 +206,66 @@
                         
                         // Handle section titles differently
                         if (entry.type === 'Subtitle' && !response) {
-                            html += `<h4 class="section-title">${entry.text}</h4>`;
-                            currentSection = entry.text;
+                            checklistHtml += `<h4 class="section-title">${entry.text}</h4>`;
                         } else if (entry.type === 'Note' || entry.type === 'Warning' || entry.type === 'Caution') {
-                            html += `<div class="checklist-item ${entryClass}">`;
-                            html += `<div class="item-text" style="flex: 1">${entry.text}</div>`;
-                            html += `</div>`;
+                            checklistHtml += `<div class="checklist-item ${entryClass}">`;
+                            checklistHtml += `<div class="item-text" style="flex: 1">${entry.text}</div>`;
+                            checklistHtml += `</div>`;
                         } else {
-                            html += `<div class="checklist-item ${entryClass}">`;
-                            html += `<div class="item-text">${entry.text}</div>`;
-                            html += `<div class="leader-dots"></div>`;
-                            html += `<div class="item-response">${response}</div>`;
-                            html += `</div>`;
+                            checklistHtml += `<div class="checklist-item ${entryClass}">`;
+                            checklistHtml += `<div class="item-text">${entry.text}</div>`;
+                            checklistHtml += `<div class="leader-dots"></div>`;
+                            checklistHtml += `<div class="item-response">${response}</div>`;
+                            checklistHtml += `</div>`;
                         }
                     });
                     
-                    html += `</div>`; // Close the checklist column
+                    checklistHtml += '</div>'; // Close checklist column
+                    
+                    // Add to appropriate page based on the page property
+                    if (checklist.page === 2) {
+                        page2Checklists.push(checklistHtml);
+                    } else {
+                        // Default to page 1 if not specified
+                        page1Checklists.push(checklistHtml);
+                    }
                 });
             });
             
+            // Add all page 1 checklists to the front page
+            page1Checklists.forEach(checklistHtml => {
+                frontPageHtml += checklistHtml;
+            });
+            
+            // Add all page 2 checklists to the back page
+            page2Checklists.forEach(checklistHtml => {
+                backPageHtml += checklistHtml;
+            });
+            
+            // Close both pages
+            frontPageHtml += '</div>';
+            backPageHtml += '</div>';
+            
+            // Add both pages to the HTML content
+            html = frontPageHtml + backPageHtml;
+            
+            // Set the content
             contentDiv.innerHTML = html;
+        }
+        
+        function setupControls() {
+            // Print button functionality
+            document.getElementById('printBtn').addEventListener('click', function() {
+                window.print();
+            });
+            
+            // Add page labels
+            const frontPage = document.getElementById('page-front');
+            const backPage = document.getElementById('page-back');
+            
+            // Insert page labels at the top of each page
+            frontPage.insertAdjacentHTML('afterbegin', '<div class="page-label">FRONT PAGE</div>');
+            backPage.insertAdjacentHTML('afterbegin', '<div class="page-label">BACK PAGE</div>');
         }
     </script>
 </body>

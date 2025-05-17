@@ -66,6 +66,7 @@
       "checklists": [
         {
           "name": "BEFORE STARTING ENGINE",
+          "page": 1,
           "entries": [
             {
               "text": "Preflight Inspection",
@@ -192,6 +193,7 @@
         },
         {
           "name": "STARTING ENGINE",
+          "page": 1,
           "entries": [
             {
               "text": "Exterior Lights",
@@ -258,6 +260,7 @@
         },
         {
           "name": "AFTER START/BEFORE TAXI",
+          "page": 1,
           "entries": [
             {
               "text": "IGNITER Switch",
@@ -319,6 +322,7 @@
         },
         {
           "name": "BEFORE TAKEOFF",
+          "page": 1,
           "entries": [
             {
               "text": "De-Ice Boot System",
@@ -412,6 +416,7 @@
         },
         {
           "name": "TAKING RUNWAY",
+          "page": 1,
           "entries": [
             {
               "text": "IGNITER Switch",
@@ -438,6 +443,7 @@
         },
         {
           "name": "TAKEOFF / CLIMB",
+          "page": 2,
           "entries": [
             {
               "text": "Rotate",
@@ -498,6 +504,7 @@
         },
         {
           "name": "CRUISE",
+          "page": 2,
           "entries": [
             {
               "text": "POWER Lever",
@@ -539,6 +546,7 @@
         },
         {
           "name": "ARRIVAL / DESCENT",
+          "page": 2,
           "entries": [
             {
               "text": "PROP Lever",
@@ -570,6 +578,7 @@
         },
         {
           "name": "APPROACH",
+          "page": 2,
           "entries": [
             {
               "text": "PROP Lever",
@@ -611,6 +620,7 @@
         },
         {
           "name": "BEFORE LANDING",
+          "page": 2,
           "entries": [
             {
               "text": "Flaps",
@@ -661,6 +671,7 @@
         },
         {
           "name": "AFTER LANDING",
+          "page": 2,
           "entries": [
             {
               "text": "Lights",
@@ -702,6 +713,7 @@
         },
         {
           "name": "SHUTDOWN",
+          "page": 2,
           "entries": [
             {
               "text": "POWER Lever",
