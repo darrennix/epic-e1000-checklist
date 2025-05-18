@@ -10,6 +10,7 @@
             line-height: 1.2;
             margin: 0;
             padding: 20px;
+            background-color: #f5f5f5;
         }
         @media print {
             /* Reset all elements */
@@ -18,9 +19,12 @@
                 -webkit-box-shadow: none !important;
                 -moz-box-shadow: none !important;
                 text-shadow: none !important;
+                background-color: white !important;
+                background-image: none !important;
             }
             
             body {
+                background-color: white !important;
                 padding: 0 !important;
                 margin: 0 !important;
             }
@@ -29,6 +33,7 @@
                 display: block !important;
                 margin: 0 !important;
                 padding: 0 !important;
+                background: white !important;
             }
             
             .page {
@@ -38,10 +43,15 @@
                 min-height: initial !important;
                 margin: 0 !important;
                 padding: 0.25in !important;
+                box-shadow: none !important;
+                -webkit-box-shadow: none !important;
+                -moz-box-shadow: none !important;
+                border: none !important;
                 page-break-after: always !important;
                 column-count: 3 !important;
                 column-gap: 10px !important;
                 column-fill: balance !important;
+                background-color: white !important;
                 overflow: visible !important;
             }
             
@@ -65,12 +75,13 @@
                 margin-bottom: 8px !important;
                 break-inside: avoid-column !important;
                 page-break-inside: avoid !important;
+                background-color: white !important;
             }
             
             .checklist-title {
+                background-color: white !important;
                 border-bottom: 1px solid #000 !important;
-                background-color: #00bfff !important;
-            }                   
+            }
             
             /* Ensure columns print correctly */
             @page {
@@ -88,6 +99,7 @@
             width: 11in;
             height: 8.5in;
             padding: 0.25in;
+            background-color: white;
             box-sizing: border-box;
             column-count: 3;
             column-gap: 10px;
@@ -114,6 +126,7 @@
             display: flex;
             gap: 10px;
             z-index: 1000;
+            background: white;
             padding: 5px;
             border-radius: 4px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -129,6 +142,7 @@
         }
         .checklist-column {
             border: 2px solid #000;
+            background-color: #fff;
             margin-bottom: 10px;
             break-inside: avoid-column;
             page-break-inside: avoid;
@@ -145,6 +159,7 @@
             border-bottom: 1px solid #000;
         }
         .section-title {
+            background-color: #d3d3d3;
             padding: 2px 4px;
             margin: 0;
             font-weight: bold;
@@ -160,11 +175,13 @@
             overflow: visible;
         }
         .item-text {
+            background-color: #fff;
             padding-right: 6px;
             position: relative;
             z-index: 2;
         }
         .item-response {
+            background-color: #fff;
             padding-left: 6px;
             margin-left: auto;
             text-align: right;
