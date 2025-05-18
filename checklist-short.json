@@ -623,29 +623,24 @@
           "page": 2,
           "entries": [
             {
-              "text": "Flaps",
-              "type": "Challenge",
-              "response": "SET"
-            },
-            {
               "text": "Landing Gear",
               "type": "Challenge",
               "response": "DOWN"
             },
             {
-              "text": "Brakes",
+              "text": "Flaps",
               "type": "Challenge",
-              "response": "TEST"
-            },
-            {
-              "text": "Yaw Damper",
-              "type": "Challenge",
-              "response": "OFF"
+              "response": "SET"
             },
             {
               "text": "Rudder Trim",
               "type": "Challenge",
               "response": "CENTER"
+            },
+            {
+              "text": "Brakes",
+              "type": "Challenge",
+              "response": "TEST"
             },
             {
               "text": "Approach Speeds:",
@@ -692,6 +687,11 @@
               "text": "Flaps",
               "type": "Challenge",
               "response": "UP"
+            },
+            {
+              "text": "Trim",
+              "type": "Challenge",
+              "response": "SET FOR TAKEOFF"
             },
             {
               "text": "DE-ICE BOOTS Switch",
@@ -769,7 +769,7 @@
               "type": "Subtitle"
             },
             {
-              "text": "L & R FUEL PUMP Switchess",
+              "text": "L & R FUEL PUMP Switches",
               "type": "Challenge",
               "response": "OFF"
             },
